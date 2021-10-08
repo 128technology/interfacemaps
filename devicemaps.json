@@ -56,9 +56,9 @@
           {
             "targetInterface": "wwp0s21u1i8",
             "type": "WAN",
-            "name": "lte-1",
+            "name": "lte-0",
             "description": "LTE device interface",
-            "bcpNetworkName": "lte-1",
+            "bcpNetworkName": "lte-0",
             "bcpNetworkDescription": "LTE network interface"
           }
         ]
@@ -134,9 +134,9 @@
           {
             "targetInterface": "wwp0s21u4i8",
             "type": "WAN",
-            "name": "lte-1",
+            "name": "lte-0",
             "description": "LTE device interface",
-            "bcpNetworkName": "lte-1",
+            "bcpNetworkName": "lte-0",
             "bcpNetworkDescription": "LTE network interface"
           }
         ]
@@ -198,9 +198,9 @@
           {
             "targetInterface": "wwp0s21u1i8",
             "type": "WAN",
-            "name": "lte-1",
+            "name": "lte-0",
             "description": "LTE device interface",
-            "bcpNetworkName": "lte-1",
+            "bcpNetworkName": "lte-0",
             "bcpNetworkDescription": "LTE network interface"
           }
         ]
@@ -276,9 +276,9 @@
           {
             "targetInterface": "wwp0s21u1i8",
             "type": "WAN",
-            "name": "lte-1",
+            "name": "lte-0",
             "description": "LTE device interface",
-            "bcpNetworkName": "lte-1",
+            "bcpNetworkName": "lte-0",
             "bcpNetworkDescription": "LTE network interface"
           }
         ]
