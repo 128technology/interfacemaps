@@ -99,9 +99,10 @@
             "pciAddress": "0000:02:00.0",
             "type": "unused",
             "name": "ge-0",
+            "description": "Port 1 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
-                "description": "Port 1 labeled on the device",
+                "description": "",
                 "name": ""
               }
             }
@@ -110,9 +111,10 @@
             "pciAddress": "0000:02:00.1",
             "type": "unused",
             "name": "ge-1",
+            "description": "Port 2 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
-                "description": "Port 2 labeled on the device",
+                "description": "",
                 "name": ""
               }
             }
