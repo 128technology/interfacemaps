@@ -284,6 +284,83 @@
             }
           }
         ],
+        "lte": []
+      },
+      "SSR120-AE": {
+        "ethernet": [
+          {
+            "pciAddress": "0000:04:00.1",
+            "type": "WAN",
+            "name": "ge-0",
+            "description": "Port 0 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "wan1",
+                "description": "WAN 1 network interface, connected to port 0 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:04:00.0",
+            "type": "WAN",
+            "name": "ge-1",
+            "description": "Port 1 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "wan2",
+                "description": "WAN 2 network interface, connected to port 1 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:03:00.1",
+            "type": "WAN",
+            "name": "ge-2",
+            "description": "Port 2 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "wan3",
+                "description": "WAN 3 network interface, connected to port 2 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:03:00.0",
+            "type": "LAN",
+            "name": "ge-3",
+            "description": "Port 3 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "lan",
+                "description": "LAN network interface, connected to port 3 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:02:00.1",
+            "type": "HAFabric",
+            "name": "ge-4",
+            "description": "Port 4 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "ha-fabric",
+                "description": "HA fabric network interface, connected to port 4 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:02:00.0",
+            "type": "HASync",
+            "name": "ge-5",
+            "description": "Port 5 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "ha-sync",
+                "description": "HA sync network interface, connected to port 5 labeled on the device"
+              }
+            }
+          }
+        ],
         "lte": [
           {
             "targetInterface": "wwp0s21u1i8",
@@ -398,6 +475,107 @@
             }
           }
         ],
+        "lte": []
+      },
+      "SSR130-AE": {
+        "ethernet": [
+          {
+            "pciAddress": "0000:04:00.3",
+            "type": "WAN",
+            "name": "ge-0",
+            "description": "Port 0 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "wan1",
+                "description": "WAN 1 network interface, connected to port 0 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:04:00.2",
+            "type": "WAN",
+            "name": "ge-1",
+            "description": "Port 1 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "wan2",
+                "description": "WAN 2 network interface, connected to port 1 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:04:00.1",
+            "type": "WAN",
+            "name": "ge-2",
+            "description": "Port 2 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "wan3",
+                "description": "WAN 3 network interface, connected to port 2 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:04:00.0",
+            "type": "unused",
+            "name": "ge-3",
+            "description": "Port 3 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "",
+                "description": ""
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:03:00.1",
+            "type": "unused",
+            "name": "ge-4",
+            "description": "Port 4 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "",
+                "description": ""
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:03:00.0",
+            "type": "LAN",
+            "name": "ge-5",
+            "description": "Port 5 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "lan",
+                "description": "LAN network interface, connected to port 5 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:02:00.1",
+            "type": "HAFabric",
+            "name": "ge-6",
+            "description": "Port 6 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "ha-fabric",
+                "description": "HA fabric network interface, connected to port 6 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:02:00.0",
+            "type": "HASync",
+            "name": "ge-7",
+            "description": "Port 7 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "ha-sync",
+                "description": "HA sync network interface, connected to port 7 labeled on the device"
+              }
+            }
+          }
+        ],
         "lte": [
           {
             "targetInterface": "wwp0s21u1i8",
@@ -412,7 +590,7 @@
             }
           }
         ]
-      }
+      }     
     }
   }
 }
