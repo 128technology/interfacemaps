@@ -6,7 +6,7 @@
           {
             "pciAddress": "0000:02:00.1",
             "type": "WAN",
-            "name": "ge-0",
+            "name": "ge-1",
             "description": "Port 1 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -18,7 +18,7 @@
           {
             "pciAddress": "0000:02:00.0",
             "type": "WAN",
-            "name": "ge-1",
+            "name": "ge-2",
             "description": "Port 2 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -30,7 +30,7 @@
           {
             "pciAddress": "0000:03:00.1",
             "type": "WAN",
-            "name": "ge-2",
+            "name": "ge-3",
             "description": "Port 3 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -42,7 +42,7 @@
           {
             "pciAddress": "0000:03:00.0",
             "type": "LAN",
-            "name": "ge-3",
+            "name": "ge-4",
             "description": "Port 4 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -54,7 +54,7 @@
           {
             "pciAddress": "0000:04:00.1",
             "type": "HAFabric",
-            "name": "ge-4",
+            "name": "ge-5",
             "description": "Port 5 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -66,7 +66,7 @@
           {
             "pciAddress": "0000:04:00.0",
             "type": "HASync",
-            "name": "ge-5",
+            "name": "ge-6",
             "description": "Port 6 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -96,7 +96,7 @@
           {
             "pciAddress": "0000:02:00.1",
             "type": "WAN",
-            "name": "ge-0",
+            "name": "ge-1",
             "description": "Port 1 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -108,7 +108,7 @@
           {
             "pciAddress": "0000:02:00.0",
             "type": "WAN",
-            "name": "ge-1",
+            "name": "ge-2",
             "description": "Port 2 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -120,7 +120,7 @@
           {
             "pciAddress": "0000:03:00.1",
             "type": "WAN",
-            "name": "ge-2",
+            "name": "ge-3",
             "description": "Port 3 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -132,7 +132,7 @@
           {
             "pciAddress": "0000:03:00.0",
             "type": "LAN",
-            "name": "ge-3",
+            "name": "ge-4",
             "description": "Port 4 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -144,7 +144,7 @@
           {
             "pciAddress": "0000:04:00.1",
             "type": "LAN",
-            "name": "ge-4",
+            "name": "ge-5",
             "description": "Port 5 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -156,7 +156,7 @@
           {
             "pciAddress": "0000:04:00.0",
             "type": "LAN",
-            "name": "ge-5",
+            "name": "ge-6",
             "description": "Port 6 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -168,7 +168,7 @@
           {
             "pciAddress": "0000:04:00.3",
             "type": "HAFabric",
-            "name": "ge-6",
+            "name": "ge-7",
             "description": "Port 7 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -180,7 +180,7 @@
           {
             "pciAddress": "0000:04:00.2",
             "type": "HASync",
-            "name": "ge-7",
+            "name": "ge-8",
             "description": "Port 8 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -212,7 +212,7 @@
           {
             "pciAddress": "0000:02:00.0",
             "type": "unused",
-            "name": "ge-0",
+            "name": "ge-1",
             "description": "Port 1 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -224,7 +224,7 @@
           {
             "pciAddress": "0000:02:00.1",
             "type": "unused",
-            "name": "ge-1",
+            "name": "ge-2",
             "description": "Port 2 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -236,7 +236,7 @@
           {
             "pciAddress": "0000:02:00.2",
             "type": "WAN",
-            "name": "ge-2",
+            "name": "ge-3",
             "description": "Port 3 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -248,7 +248,7 @@
           {
             "pciAddress": "0000:02:00.3",
             "type": "WAN",
-            "name": "ge-3",
+            "name": "ge-4",
             "description": "Port 4 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -260,7 +260,7 @@
           {
             "pciAddress": "0000:08:00.0",
             "type": "WAN",
-            "name": "ge-4",
+            "name": "ge-5",
             "description": "Port 5 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -272,7 +272,7 @@
           {
             "pciAddress": "0000:08:00.1",
             "type": "LAN",
-            "name": "ge-5",
+            "name": "ge-6",
             "description": "Port 6 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -284,7 +284,7 @@
           {
             "pciAddress": "0000:0a:00.0",
             "type": "HAFabric",
-            "name": "ge-6",
+            "name": "ge-7",
             "description": "Port 7 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -296,7 +296,7 @@
           {
             "pciAddress": "0000:0a:00.1",
             "type": "HASync",
-            "name": "ge-7",
+            "name": "ge-8",
             "description": "Port 8 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
