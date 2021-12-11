@@ -418,7 +418,7 @@
                 "description": "HA sync network interface"
               }
             }
-          },
+          }
         ]
       }
     },
