@@ -7,7 +7,7 @@
             "pciAddress": "0000:02:00.1",
             "type": "WAN",
             "speed": 1000,
-            "name": "ge-1",
+            "name": "thisisn'tlegal-1",
             "description": "Port 1 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
