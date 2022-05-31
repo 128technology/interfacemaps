@@ -1528,7 +1528,7 @@
       "SSR1200": {
         "clei": "INMJV10HRA",
         "part_number": "650-147980",
-
+        "ethernet": [
           {
             "pciAddress": "0000:03:00.0",
             "type": "MGMT",
