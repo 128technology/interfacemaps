@@ -1554,7 +1554,7 @@
                 "description": "WAN 1 network interface, connected to port 0/0 labeled on the device"
               }
             }
-          }, 
+          },
           {
             "pciAddress": "0000:03:00.2",
             "type": "WAN",
@@ -2039,7 +2039,6 @@
           }
         ],
         "lte": []
-      }
       }
     }
   }
