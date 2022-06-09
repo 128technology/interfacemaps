@@ -1533,7 +1533,7 @@
             "pciAddress": "0000:03:00.0",
             "type": "MGMT",
             "speed": 1000,
-            "name": "mgmt-0-0-0",
+            "name": "mgmt-0-0",
             "description": "Port MGMT labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1546,7 +1546,7 @@
             "pciAddress": "0000:03:00.1",
             "type": "WAN",
             "speed": 1000,
-            "name": "ge-0-0-0",
+            "name": "ge-0-0",
             "description": "Port 0/0 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1559,7 +1559,7 @@
             "pciAddress": "0000:03:00.2",
             "type": "WAN",
             "speed": 1000,
-            "name": "ge-0-0-1",
+            "name": "ge-0-1",
             "description": "Port 0/1 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1572,7 +1572,7 @@
             "pciAddress": "0000:03:00.3",
             "type": "WAN",
             "speed": 1000,
-            "name": "ge-0-0-2",
+            "name": "ge-0-2",
             "description": "Port 0/2 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1585,7 +1585,7 @@
             "pciAddress": "0000:01:00.0",
             "type": "LAN",
             "speed": 1000,
-            "name": "ge-0-0-3",
+            "name": "ge-0-3",
             "description": "Port 0/3 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1598,7 +1598,7 @@
             "pciAddress": "0000:01:00.1",
             "type": "LAN",
             "speed": 1000,
-            "name": "ge-0-0-4",
+            "name": "ge-0-4",
             "description": "Port 0/4 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1611,7 +1611,7 @@
             "pciAddress": "0000:01:00.2",
             "type": "HAFabric",
             "speed": 1000,
-            "name": "ge-0-0-5",
+            "name": "ge-0-5",
             "description": "Port 0/5 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1624,7 +1624,7 @@
             "pciAddress": "0000:01:00.3",
             "type": "HASync",
             "speed": 1000,
-            "name": "ge-0-0-6",
+            "name": "ge-0-6",
             "description": "Port 0/6 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1637,7 +1637,7 @@
             "pciAddress": "0000:07:00.3",
             "type": "LAN",
             "speed": 10000,
-            "name": "xe-0-1-0",
+            "name": "xe-1-0",
             "description": "Port 1/0 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1650,7 +1650,7 @@
             "pciAddress": "0000:07:00.2",
             "type": "LAN",
             "speed": 10000,
-            "name": "xe-0-1-1",
+            "name": "xe-1-1",
             "description": "Port 1/1 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1663,7 +1663,7 @@
             "pciAddress": "0000:07:00.1",
             "type": "LAN",
             "speed": 10000,
-            "name": "xe-0-1-2",
+            "name": "xe-1-2",
             "description": "Port 1/2 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1676,7 +1676,7 @@
             "pciAddress": "0000:07:00.0",
             "type": "LAN",
             "speed": 10000,
-            "name": "xe-0-1-3",
+            "name": "xe-1-3",
             "description": "Port 1/3 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1696,7 +1696,7 @@
             "pciAddress": "0000:6a:00.0",
             "type": "WAN",
             "speed": 10000,
-            "name": "xe-0-0-0",
+            "name": "xe-0-0",
             "description": "Port 0/0 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1709,7 +1709,7 @@
             "pciAddress": "0000:6a:00.1",
             "type": "WAN",
             "speed": 10000,
-            "name": "xe-0-0-1",
+            "name": "xe-0-1",
             "description": "Port 0/1 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1722,7 +1722,7 @@
             "pciAddress": "0000:6a:00.2",
             "type": "WAN",
             "speed": 10000,
-            "name": "xe-0-0-2",
+            "name": "xe-0-2",
             "description": "Port 0/2 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1735,7 +1735,7 @@
             "pciAddress": "0000:6a:00.3",
             "type": "LAN",
             "speed": 10000,
-            "name": "xe-0-0-3",
+            "name": "xe-0-3",
             "description": "Port 0/3 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1748,7 +1748,7 @@
             "pciAddress": "0000:01:00.0",
             "type": "MGMT",
             "speed": 1000,
-            "name": "mgmt-0-0-0",
+            "name": "mgmt-0-0",
             "description": "Port MGMT labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1761,7 +1761,7 @@
             "pciAddress": "0000:19:00.0",
             "type": "HASync",
             "speed": 1000,
-            "name": "ge-0-1-0",
+            "name": "ge-1-0",
             "description": "Port 1/0 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1774,7 +1774,7 @@
             "pciAddress": "0000:19:00.1",
             "type": "LAN",
             "speed": 1000,
-            "name": "ge-0-1-1",
+            "name": "ge-1-1",
             "description": "Port 1/1 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1787,7 +1787,7 @@
             "pciAddress": "0000:19:00.2",
             "type": "LAN",
             "speed": 1000,
-            "name": "ge-0-1-2",
+            "name": "ge-1-2",
             "description": "Port 1/2 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1800,7 +1800,7 @@
             "pciAddress": "0000:19:00.3",
             "type": "LAN",
             "speed": 1000,
-            "name": "ge-0-1-3",
+            "name": "ge-1-3",
             "description": "Port 1/3 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1813,7 +1813,7 @@
             "pciAddress": "0000:1b:00.3",
             "type": "LAN",
             "speed": 10000,
-            "name": "xe-0-2-0",
+            "name": "xe-2-0",
             "description": "Port 2/0 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1826,7 +1826,7 @@
             "pciAddress": "0000:1b:00.2",
             "type": "LAN",
             "speed": 10000,
-            "name": "xe-0-2-1",
+            "name": "xe-2-1",
             "description": "Port 2/1 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1839,7 +1839,7 @@
             "pciAddress": "0000:1b:00.1",
             "type": "LAN",
             "speed": 10000,
-            "name": "xe-0-2-2",
+            "name": "xe-2-2",
             "description": "Port 2/2 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1852,7 +1852,7 @@
             "pciAddress": "0000:1b:00.0",
             "type": "HAFabric",
             "speed": 10000,
-            "name": "xe-0-2-3",
+            "name": "xe-2-3",
             "description": "Port 2/3 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1872,7 +1872,7 @@
             "pciAddress": "0000:6a:00.0",
             "type": "WAN",
             "speed": 10000,
-            "name": "xe-0-0-0",
+            "name": "xe-0-0",
             "description": "Port 0/0 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1885,7 +1885,7 @@
             "pciAddress": "0000:6a:00.1",
             "type": "WAN",
             "speed": 10000,
-            "name": "xe-0-0-1",
+            "name": "xe-0-1",
             "description": "Port 0/1 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1898,7 +1898,7 @@
             "pciAddress": "0000:6a:00.2",
             "type": "WAN",
             "speed": 10000,
-            "name": "xe-0-0-2",
+            "name": "xe-0-2",
             "description": "Port 0/2 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1911,7 +1911,7 @@
             "pciAddress": "0000:6a:00.3",
             "type": "LAN",
             "speed": 10000,
-            "name": "xe-0-0-3",
+            "name": "xe-0-3",
             "description": "Port 0/3 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1924,7 +1924,7 @@
             "pciAddress": "0000:01:00.0",
             "type": "MGMT",
             "speed": 1000,
-            "name": "mgmt-0-0-0",
+            "name": "mgmt-0-0",
             "description": "Port MGMT labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1937,7 +1937,7 @@
             "pciAddress": "0000:19:00.0",
             "type": "HASync",
             "speed": 1000,
-            "name": "ge-0-1-0",
+            "name": "ge-1-0",
             "description": "Port 1/0 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1950,7 +1950,7 @@
             "pciAddress": "0000:19:00.1",
             "type": "LAN",
             "speed": 1000,
-            "name": "ge-0-1-1",
+            "name": "ge-1-1",
             "description": "Port 1/1 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1963,7 +1963,7 @@
             "pciAddress": "0000:19:00.2",
             "type": "LAN",
             "speed": 1000,
-            "name": "ge-0-1-2",
+            "name": "ge-1-2",
             "description": "Port 1/2 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1976,7 +1976,7 @@
             "pciAddress": "0000:19:00.3",
             "type": "LAN",
             "speed": 1000,
-            "name": "ge-0-1-3",
+            "name": "ge-1-3",
             "description": "Port 1/3 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -1989,7 +1989,7 @@
             "pciAddress": "0000:1b:00.0",
             "type": "LAN",
             "speed": 10000,
-            "name": "xe-0-2-0",
+            "name": "xe-2-0",
             "description": "Port 2/0 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -2002,7 +2002,7 @@
             "pciAddress": "0000:1b:00.1",
             "type": "LAN",
             "speed": 10000,
-            "name": "xe-0-2-1",
+            "name": "xe-2-1",
             "description": "Port 2/1 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -2015,7 +2015,7 @@
             "pciAddress": "0000:1b:00.2",
             "type": "LAN",
             "speed": 10000,
-            "name": "xe-0-2-2",
+            "name": "xe-2-2",
             "description": "Port 2/2 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -2028,7 +2028,7 @@
             "pciAddress": "0000:1b:00.3",
             "type": "HAFabric",
             "speed": 10000,
-            "name": "xe-0-2-3",
+            "name": "xe-2-3",
             "description": "Port 2/3 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
