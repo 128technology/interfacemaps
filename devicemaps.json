@@ -346,7 +346,7 @@
       "NCA-1515B-128T": {
         "alias": {
           "vendor": "Lanner",
-          "model": "NCA-1515A-128T"
+          "sku": "NCA-1515A-128T"
         }
       }
     },
