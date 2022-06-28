@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+        "interfaceMap": {
+            "type": "object",
+            "patternProperties": {
+                "^.*$": {
+                    "type": "object",
+                    "patternProperties": {
+                        "^.*$": {
+                            "$ref": "devicemap-schema.json"
+                        },
+                        "additionalProperties": false
+                    }
+                },
+                "additionalProperties": false
+            },
+            "additionalProperties": false
+        }
+    }
+}
