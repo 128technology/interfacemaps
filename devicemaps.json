@@ -7,7 +7,7 @@
             "pciAddress": "0000:02:00.1",
             "type": "WAN",
             "speed": 1000,
-            "name": "ge-1",
+            "name": "ge-0-1",
             "description": "Port 1 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -20,7 +20,7 @@
             "pciAddress": "0000:02:00.0",
             "type": "WAN",
             "speed": 1000,
-            "name": "ge-2",
+            "name": "ge-0-2",
             "description": "Port 2 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -33,7 +33,7 @@
             "pciAddress": "0000:03:00.1",
             "type": "WAN",
             "speed": 1000,
-            "name": "ge-3",
+            "name": "ge-0-3",
             "description": "Port 3 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -46,7 +46,7 @@
             "pciAddress": "0000:03:00.0",
             "type": "LAN",
             "speed": 1000,
-            "name": "ge-4",
+            "name": "ge-0-4",
             "description": "Port 4 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -59,7 +59,7 @@
             "pciAddress": "0000:04:00.1",
             "type": "HAFabric",
             "speed": 1000,
-            "name": "ge-5",
+            "name": "ge-0-5",
             "description": "Port 5 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -72,7 +72,7 @@
             "pciAddress": "0000:04:00.0",
             "type": "HASync",
             "speed": 1000,
-            "name": "ge-6",
+            "name": "ge-0-6",
             "description": "Port 6 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -86,11 +86,11 @@
           {
             "targetInterface": "wwp0s21u1i8",
             "type": "WAN",
-            "name": "lte-0",
+            "name": "lte-0-0",
             "description": "LTE device interface",
             "bcpNetwork": {
               "standaloneBranch": {
-                "name": "lte-0",
+                "name": "lte-0-0",
                 "description": "LTE network interface"
               }
             }
@@ -103,7 +103,7 @@
             "pciAddress": "0000:02:00.1",
             "type": "WAN",
             "speed": 1000,
-            "name": "ge-1",
+            "name": "ge-0-1",
             "description": "Port 1 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -116,7 +116,7 @@
             "pciAddress": "0000:02:00.0",
             "type": "WAN",
             "speed": 1000,
-            "name": "ge-2",
+            "name": "ge-0-2",
             "description": "Port 2 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -129,7 +129,7 @@
             "pciAddress": "0000:03:00.1",
             "type": "WAN",
             "speed": 1000,
-            "name": "ge-3",
+            "name": "ge-0-3",
             "description": "Port 3 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -142,7 +142,7 @@
             "pciAddress": "0000:03:00.0",
             "type": "LAN",
             "speed": 1000,
-            "name": "ge-4",
+            "name": "ge-0-4",
             "description": "Port 4 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -155,7 +155,7 @@
             "pciAddress": "0000:04:00.1",
             "type": "LAN",
             "speed": 1000,
-            "name": "ge-5",
+            "name": "ge-0-5",
             "description": "Port 5 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -168,7 +168,7 @@
             "pciAddress": "0000:04:00.0",
             "type": "LAN",
             "speed": 1000,
-            "name": "ge-6",
+            "name": "ge-0-6",
             "description": "Port 6 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -181,7 +181,7 @@
             "pciAddress": "0000:04:00.3",
             "type": "HAFabric",
             "speed": 1000,
-            "name": "ge-7",
+            "name": "ge-0-7",
             "description": "Port 7 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -194,7 +194,7 @@
             "pciAddress": "0000:04:00.2",
             "type": "HASync",
             "speed": 1000,
-            "name": "ge-8",
+            "name": "ge-0-8",
             "description": "Port 8 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -208,11 +208,11 @@
           {
             "targetInterface": "wwp0s21u1i8",
             "type": "WAN",
-            "name": "lte-0",
+            "name": "lte-0-0",
             "description": "LTE device interface",
             "bcpNetwork": {
               "standaloneBranch": {
-                "name": "lte-0",
+                "name": "lte-0-0",
                 "description": "LTE network interface"
               }
             }
@@ -227,7 +227,7 @@
             "pciAddress": "0000:02:00.0",
             "type": "LAN",
             "speed": 1000,
-            "name": "ge-1",
+            "name": "ge-0-1",
             "description": "Port 1 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -240,7 +240,7 @@
             "pciAddress": "0000:02:00.1",
             "type": "LAN",
             "speed": 1000,
-            "name": "ge-2",
+            "name": "ge-0-2",
             "description": "Port 2 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -253,7 +253,7 @@
             "pciAddress": "0000:02:00.2",
             "type": "WAN",
             "speed": 1000,
-            "name": "ge-3",
+            "name": "ge-0-3",
             "description": "Port 3 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -266,7 +266,7 @@
             "pciAddress": "0000:02:00.3",
             "type": "WAN",
             "speed": 1000,
-            "name": "ge-4",
+            "name": "ge-0-4",
             "description": "Port 4 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -279,7 +279,7 @@
             "pciAddress": "0000:08:00.0",
             "type": "WAN",
             "speed": 1000,
-            "name": "ge-5",
+            "name": "ge-0-5",
             "description": "Port 5 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -292,7 +292,7 @@
             "pciAddress": "0000:08:00.1",
             "type": "LAN",
             "speed": 1000,
-            "name": "ge-6",
+            "name": "ge-0-6",
             "description": "Port 6 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -305,7 +305,7 @@
             "pciAddress": "0000:0a:00.0",
             "type": "HAFabric",
             "speed": 1000,
-            "name": "ge-7",
+            "name": "ge-0-7",
             "description": "Port 7 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -318,7 +318,7 @@
             "pciAddress": "0000:0a:00.1",
             "type": "HASync",
             "speed": 1000,
-            "name": "ge-8",
+            "name": "ge-0-8",
             "description": "Port 8 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -332,11 +332,11 @@
           {
             "targetInterface": "wwp0s21u4i8",
             "type": "WAN",
-            "name": "lte-0",
+            "name": "lte-0-0",
             "description": "LTE device interface",
             "bcpNetwork": {
               "standaloneBranch": {
-                "name": "lte-0",
+                "name": "lte-0-0",
                 "description": "LTE network interface"
               }
             }
@@ -359,7 +359,7 @@
             "pciAddress": "0000:04:00.1",
             "type": "WAN",
             "speed": 1000,
-            "name": "ge-0",
+            "name": "ge-0-0",
             "description": "Port 0 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -372,7 +372,7 @@
             "pciAddress": "0000:04:00.0",
             "type": "WAN",
             "speed": 1000,
-            "name": "ge-1",
+            "name": "ge-0-1",
             "description": "Port 1 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -385,7 +385,7 @@
             "pciAddress": "0000:03:00.1",
             "type": "WAN",
             "speed": 1000,
-            "name": "ge-2",
+            "name": "ge-0-2",
             "description": "Port 2 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -398,7 +398,7 @@
             "pciAddress": "0000:03:00.0",
             "type": "LAN",
             "speed": 1000,
-            "name": "ge-3",
+            "name": "ge-0-3",
             "description": "Port 3 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -411,7 +411,7 @@
             "pciAddress": "0000:02:00.1",
             "type": "HAFabric",
             "speed": 1000,
-            "name": "ge-4",
+            "name": "ge-0-4",
             "description": "Port 4 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -424,7 +424,7 @@
             "pciAddress": "0000:02:00.0",
             "type": "HASync",
             "speed": 1000,
-            "name": "ge-5",
+            "name": "ge-0-5",
             "description": "Port 5 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -453,11 +453,11 @@
           {
             "targetInterface": "wwp0s21u1i8",
             "type": "WAN",
-            "name": "lte-0",
+            "name": "lte-0-0",
             "description": "LTE device interface",
             "bcpNetwork": {
               "standaloneBranch": {
-                "name": "lte-0",
+                "name": "lte-0-0",
                 "description": "LTE network interface"
               }
             }
@@ -486,7 +486,7 @@
             "pciAddress": "0000:04:00.3",
             "type": "WAN",
             "speed": 1000,
-            "name": "ge-0",
+            "name": "ge-0-0",
             "description": "Port 0 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -499,7 +499,7 @@
             "pciAddress": "0000:04:00.2",
             "type": "WAN",
             "speed": 1000,
-            "name": "ge-1",
+            "name": "ge-0-1",
             "description": "Port 1 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -512,7 +512,7 @@
             "pciAddress": "0000:04:00.1",
             "type": "WAN",
             "speed": 1000,
-            "name": "ge-2",
+            "name": "ge-0-2",
             "description": "Port 2 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -525,7 +525,7 @@
             "pciAddress": "0000:04:00.0",
             "type": "LAN",
             "speed": 1000,
-            "name": "ge-3",
+            "name": "ge-0-3",
             "description": "Port 3 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -538,7 +538,7 @@
             "pciAddress": "0000:03:00.1",
             "type": "LAN",
             "speed": 1000,
-            "name": "ge-4",
+            "name": "ge-0-4",
             "description": "Port 4 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -551,7 +551,7 @@
             "pciAddress": "0000:03:00.0",
             "type": "LAN",
             "speed": 1000,
-            "name": "ge-5",
+            "name": "ge-0-5",
             "description": "Port 5 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -564,7 +564,7 @@
             "pciAddress": "0000:02:00.1",
             "type": "HAFabric",
             "speed": 1000,
-            "name": "ge-6",
+            "name": "ge-0-6",
             "description": "Port 6 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -577,7 +577,7 @@
             "pciAddress": "0000:02:00.0",
             "type": "HASync",
             "speed": 1000,
-            "name": "ge-7",
+            "name": "ge-0-7",
             "description": "Port 7 labeled on the device",
             "bcpNetwork": {
               "standaloneBranch": {
@@ -606,11 +606,11 @@
           {
             "targetInterface": "wwp0s21u1i8",
             "type": "WAN",
-            "name": "lte-0",
+            "name": "lte-0-0",
             "description": "LTE device interface",
             "bcpNetwork": {
               "standaloneBranch": {
-                "name": "lte-0",
+                "name": "lte-0-0",
                 "description": "LTE network interface"
               }
             }
