@@ -1,0 +1,162 @@
+{
+    "type": "object",
+    "properties": {
+      "clei": {
+        "type": "string"
+      },
+      "part_number": {
+        "type": "string"
+      },
+      "ethernet": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "allOf": [
+            {
+              "$ref": "#/$defs/baseInterface"
+            }
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "pattern": "^(ge|xe|mgmt)-[0-9]+(-[0-9]+)?$"
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "WAN",
+                "LAN",
+                "HASync",
+                "HAFabric",
+                "MGMT"
+              ]
+            },
+            "speed": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "name",
+            "type"
+          ],
+          "oneOf": [
+            {
+              "properties": {
+                "pciAddress": {
+                  "type": "string",
+                  "pattern": "^[0-9a-fA-F]{4}(:[0-9a-fA-F]{2}){2}\\.[0-7]$"
+                },
+                "vmbusId": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "pciAddress"
+              ]
+            },
+            {
+              "properties": {
+                "pciAddress": {
+                  "type": "null"
+                },
+                "vmbusId": {
+                  "type": "string",
+                  "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+                }
+              },
+              "required": [
+                "vmbusId"
+              ]
+            }
+          ]
+        }
+      },
+      "lte": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "allOf": [
+            {
+              "$ref": "#/$defs/baseInterface"
+            }
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "pattern": "^lte-[0-9]+$"
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "WAN"
+              ]
+            },
+            "targetInterface": {
+              "type": "string",
+              "pattern": "^[^/:\\s]+$"
+            }
+          },
+          "required": [
+            "name",
+            "type",
+            "targetInterface"
+          ]
+        }
+      },
+      "alias": {
+        "type": "object",
+        "properties": {
+          "vendor": {
+            "type": "string"
+          },
+          "sku": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "vendor",
+          "sku"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "additionalProperties": false,
+    "$defs": {
+      "baseInterface": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "bcpNetwork": {
+            "type": "object",
+            "description": "A set of templates that may be used to form a \"best common practice\" network",
+            "patternProperties": {
+              "^[a-zA-Z0-9]+$": {
+                "$ref": "#/$defs/bcpNetworkTemplate"
+              }
+            }
+          }
+        },
+        "required": [
+          "description",
+          "bcpNetwork"
+        ]
+      },
+      "bcpNetworkTemplate": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The name of the interface when used by this BCP template"
+          },
+          "description": {
+            "type": "string",
+            "description": "The description of the interface when used by this BCP template"
+          }
+        }
+      }
+    }
+  }
+  
