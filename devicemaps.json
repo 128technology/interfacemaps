@@ -221,7 +221,7 @@
       }
     },
     "Lanner": {
-      "NCA-1515A-128T": {
+      "NCA-1515": {
         "ethernet": [
           {
             "pciAddress": "0000:02:00.0",
@@ -342,12 +342,6 @@
             }
           }
         ]
-      },
-      "NCA-1515B-128T": {
-        "alias": {
-          "vendor": "Lanner",
-          "sku": "NCA-1515A-128T"
-        }
       }
     },
     "Juniper": {
