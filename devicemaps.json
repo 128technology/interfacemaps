@@ -4,7 +4,7 @@
       "90500-0151-G61": {
         "ethernet": [
           {
-            "pciAddress": "123",
+            "pciAddress": "0000:02:00.1",
             "type": "WAN",
             "speed": 1000,
             "name": "ge-0-1",
