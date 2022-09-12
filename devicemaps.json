@@ -88,7 +88,7 @@
         "description": "Madrid - 6 ethernet, 1 lte",
         "alias": {
           "vendor": "Silicom",
-          "sku": "90500-0151-G"
+          "sku": "90500-0151-"
         },
         "lte": [
           {
@@ -116,7 +116,7 @@
         "description": "Madrid - 6 ethernet, 2 lte",
         "alias": {
           "vendor": "Silicom",
-          "sku": "90500-0151-G"
+          "sku": "90500-0151-"
         },
         "lte": [
           {
