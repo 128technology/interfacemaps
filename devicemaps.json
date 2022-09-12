@@ -1,7 +1,7 @@
 {
   "interfaceMap": {
     "Silicom": {
-      "90500-0151-G61": {
+      "90500-0151-G": {
         "ethernet": [
           {
             "pciAddress": "0000:02:00.1",
@@ -81,7 +81,13 @@
               }
             }
           }
-        ],
+        ]
+      },
+      "90500-0151-G11": {
+        "alias": {
+          "vendor": "Silicom",
+          "sku": "90500-0151-G"
+        },
         "lte": [
           {
             "targetInterface": "wwp0s21u1i8",
@@ -97,8 +103,45 @@
           }
         ]
       },
-      "90500-0151-": {
-        "description": "Madrid Platforms",
+      "90500-0151-G61": {
+        "alias": {
+          "vendor": "Silicom",
+          "sku": "90500-0151-G11"
+        }
+      },
+      "90500-0151-G71": {
+        "alias": {
+          "vendor": "Silicom",
+          "sku": "90500-0151-G"
+        },
+        "lte": [
+          {
+            "targetInterface": "wwp0s21u1i8",
+            "type": "WAN",
+            "name": "lte-0-0",
+            "description": "LTE device interface",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "lte-0-0",
+                "description": "LTE network interface"
+              }
+            }
+          },
+          {
+            "targetInterface": "wwp0s21u3i8",
+            "type": "WAN",
+            "name": "lte-0-1",
+            "description": "LTE device interface",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "lte-0-1",
+                "description": "LTE network interface"
+              }
+            }
+          }
+        ]
+      },
+      "90500-0151-G53": {
         "ethernet": [
           {
             "pciAddress": "0000:02:00.1",
