@@ -267,6 +267,13 @@
             }
           }
         ]
+      },
+      "0500-0151-G13": {
+        "description": "Madrid - 8 ethernet, 1 lte",
+        "alias": {
+          "vendor": "Silicom",
+          "sku": "90500-0151-G53"
+        }
       }
     },
     "Lanner": {
