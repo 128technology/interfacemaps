@@ -1188,6 +1188,234 @@
           }
         ],
         "lte": []
+      },
+      "SSR1500": {
+        "clei": "INMJY10HRA",
+        "part_number": "650-147539",
+        "ethernet": [
+          {
+            "pciAddress": "0000:41:00.0",
+            "type": "MGMT",
+            "speed": 1000,
+            "name": "mgmt-0-0",
+            "description": "Port MGMT labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "mgmt",
+                "description": "MGMT network interface, connected to port MGMT labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:44:00.0",
+            "type": "WAN",
+            "speed": 1000,
+            "name": "ge-1-0",
+            "description": "Port 1/0 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "wan1",
+                "description": "WAN 1 network interface, connected to port 1/0 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:44:00.1",
+            "type": "WAN",
+            "speed": 1000,
+            "name": "ge-1-1",
+            "description": "Port 1/1 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "wan2",
+                "description": "WAN 2 network interface, connected to port 1/1 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:44:00.2",
+            "type": "WAN",
+            "speed": 1000,
+            "name": "ge-1-2",
+            "description": "Port 1/2 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "wan3",
+                "description": "WAN 3 network interface, connected to port 1/2 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:44:00.3",
+            "type": "HASync",
+            "speed": 1000,
+            "name": "ge-1-3",
+            "description": "Port 1/3 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "ha-sync",
+                "description": "HA sync network interface, connected to port 1/3 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:42:00.0",
+            "type": "HAFabric",
+            "speed": 10000,
+            "name": "xe-2-0",
+            "description": "Port 2/0 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "ha-fabric",
+                "description": "HA fabric network interface, connected to port 2/0 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:42:00.1",
+            "type": "LAN",
+            "speed": 10000,
+            "name": "xe-2-1",
+            "description": "Port 2/1 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "lan1",
+                "description": "LAN 1 network interface, connected to port 2/1 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:42:00.2",
+            "type": "LAN",
+            "speed": 10000,
+            "name": "xe-2-2",
+            "description": "Port 2/2 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "lan2",
+                "description": "LAN 2 network interface, connected to port 2/2 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:42:00.3",
+            "type": "LAN",
+            "speed": 10000,
+            "name": "xe-2-3",
+            "description": "Port 2/3 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "lan3",
+                "description": "LAN 3 network interface, connected to port 2/3 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:81:00.0",
+            "type": "LAN",
+            "speed": 10000,
+            "name": "xe-3-0",
+            "description": "Port 3/0 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "lan4",
+                "description": "LAN 4 network interface, connected to port 3/0 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:81:00.1",
+            "type": "LAN",
+            "speed": 10000,
+            "name": "xe-3-1",
+            "description": "Port 3/1 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "lan5",
+                "description": "LAN 5 network interface, connected to port 3/1 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:81:00.2",
+            "type": "LAN",
+            "speed": 10000,
+            "name": "xe-3-2",
+            "description": "Port 3/2 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "lan6",
+                "description": "LAN 6 network interface, connected to port 3/2 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:81:00.3",
+            "type": "LAN",
+            "speed": 10000,
+            "name": "xe-3-3",
+            "description": "Port 3/3 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "lan7",
+                "description": "LAN 7 network interface, connected to port 3/3 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:C1:00.0",
+            "type": "LAN",
+            "speed": 10000,
+            "name": "xe-4-0",
+            "description": "Port 4/0 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "lan8",
+                "description": "LAN 8 network interface, connected to port 4/0 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:C1:00.1",
+            "type": "LAN",
+            "speed": 10000,
+            "name": "xe-4-1",
+            "description": "Port 4/1 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "lan9",
+                "description": "LAN 9 network interface, connected to port 4/1 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:C1:00.2",
+            "type": "LAN",
+            "speed": 10000,
+            "name": "xe-4-2",
+            "description": "Port 4/2 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "lan10",
+                "description": "LAN 10 network interface, connected to port 4/2 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:C1:00.3",
+            "type": "LAN",
+            "speed": 10000,
+            "name": "xe-4-3",
+            "description": "Port 4/3 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "lan11",
+                "description": "LAN 11 network interface, connected to port 4/3 labeled on the device"
+              }
+            }
+          }
+        ],
+        "lte": []
       }
     }
   }
