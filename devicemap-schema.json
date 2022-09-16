@@ -122,6 +122,9 @@
           "sku"
         ],
         "additionalProperties": false
+      },
+      "source": {
+        "type": "string"
       }
     },
     "additionalProperties": false,
