@@ -267,6 +267,129 @@
             }
           }
         ]
+      },
+      "90500-0151-G13": {
+        "description": "Madrid - 8 ethernet, 1 lte (Identical to G53, except for ge-0-7 and ge-0-8)",
+        "ethernet": [
+          {
+            "pciAddress": "0000:02:00.1",
+            "type": "WAN",
+            "speed": 1000,
+            "name": "ge-0-1",
+            "description": "Port 1 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "wan1",
+                "description": "WAN 1 network interface, connected to port 1 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:02:00.0",
+            "type": "WAN",
+            "speed": 1000,
+            "name": "ge-0-2",
+            "description": "Port 2 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "wan2",
+                "description": "WAN 2 network interface, connected to port 2 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:03:00.1",
+            "type": "WAN",
+            "speed": 1000,
+            "name": "ge-0-3",
+            "description": "Port 3 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "wan3",
+                "description": "WAN 3 network interface, connected to port 3 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:03:00.0",
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-4",
+            "description": "Port 4 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "lan",
+                "description": "WAN 4 network interface, connected to port 3 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:04:00.1",
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-5",
+            "description": "Port 5 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "ha-fabric",
+                "description": "WAN 5 network interface, connected to port 3 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:04:00.0",
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-6",
+            "description": "Port 6 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "lan",
+                "description": "LAN network interface, connected to port 6 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:04:00.2",
+            "type": "HAFabric",
+            "speed": 1000,
+            "name": "ge-0-7",
+            "description": "Port 7 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "ha-fabric",
+                "description": "HA fabric network interface, connected to port 7 labeled on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:04:00.3",
+            "type": "HASync",
+            "speed": 1000,
+            "name": "ge-0-8",
+            "description": "Port 8 labeled on the device",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "ha-sync",
+                "description": "HA sync network interface, connected to port 8 labeled on the device"
+              }
+            }
+          }
+        ],
+        "lte": [
+          {
+            "targetInterface": "wwp0s21u1i8",
+            "type": "WAN",
+            "name": "lte-0-0",
+            "description": "LTE device interface",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "lte-0-0",
+                "description": "LTE network interface"
+              }
+            }
+          }
+        ]
       }
     },
     "Lanner": {
