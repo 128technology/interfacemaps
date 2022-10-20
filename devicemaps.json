@@ -1370,7 +1370,7 @@
             }
           },
           {
-            "pciAddress": "0000:C1:00.0",
+            "pciAddress": "0000:c1:00.0",
             "type": "LAN",
             "speed": 10000,
             "name": "xe-4-0",
@@ -1383,7 +1383,7 @@
             }
           },
           {
-            "pciAddress": "0000:C1:00.1",
+            "pciAddress": "0000:c1:00.1",
             "type": "LAN",
             "speed": 10000,
             "name": "xe-4-1",
@@ -1396,7 +1396,7 @@
             }
           },
           {
-            "pciAddress": "0000:C1:00.2",
+            "pciAddress": "0000:c1:00.2",
             "type": "LAN",
             "speed": 10000,
             "name": "xe-4-2",
@@ -1409,7 +1409,7 @@
             }
           },
           {
-            "pciAddress": "0000:C1:00.3",
+            "pciAddress": "0000:c1:00.3",
             "type": "LAN",
             "speed": 10000,
             "name": "xe-4-3",
