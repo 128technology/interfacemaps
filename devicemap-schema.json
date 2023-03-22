@@ -98,7 +98,8 @@
             "type": {
               "type": "string",
               "enum": [
-                "WAN"
+                "WAN",
+                "UNUSED"
               ]
             },
             "targetInterface": {
