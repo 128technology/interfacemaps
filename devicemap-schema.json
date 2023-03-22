@@ -99,7 +99,8 @@
               "type": "string",
               "enum": [
                 "WAN",
-                "UNUSED"
+                "UNUSED",
+                "IGNORE"
               ]
             },
             "targetInterface": {
