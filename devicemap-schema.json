@@ -31,12 +31,18 @@
                 "LAN",
                 "HASync",
                 "HAFabric",
-                "MGMT"
+                "MGMT",
+                "UNUSED",
+                "IGNORE"
               ]
             },
             "speed": {
               "type": "integer",
               "minimum": 0
+            },
+            "address": {
+              "type": "string",
+              "pattern": "^(([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])/(([0-9])|([1-2][0-9])|(3[0-2]))$"
             }
           },
           "required": [
@@ -51,7 +57,7 @@
                   "pattern": "^[0-9a-fA-F]{4}(:[0-9a-fA-F]{2}){2}\\.[0-7]$"
                 },
                 "vmbusId": {
-                  "type": "null"
+                    "type": "null"
                 }
               },
               "required": [
@@ -61,7 +67,7 @@
             {
               "properties": {
                 "pciAddress": {
-                  "type": "null"
+                    "type": "null"
                 },
                 "vmbusId": {
                   "type": "string",
@@ -92,7 +98,9 @@
             "type": {
               "type": "string",
               "enum": [
-                "WAN"
+                "WAN",
+                "UNUSED",
+                "IGNORE"
               ]
             },
             "targetInterface": {
@@ -144,11 +152,7 @@
               }
             }
           }
-        },
-        "required": [
-          "description",
-          "bcpNetwork"
-        ]
+        }
       },
       "bcpNetworkTemplate": {
         "type": "object",
