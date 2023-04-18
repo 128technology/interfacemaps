@@ -54,7 +54,6 @@
               "maximum": 4094
             }
           },
-          "additionalProperties": false,
           "required": [
             "name",
             "type"
