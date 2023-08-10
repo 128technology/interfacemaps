@@ -16,6 +16,10 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: "3.6"
+    - name: setup git config
+      run: |
+        git config user.name "GitHub Actions Bot"
+        git config user.email "<>"
     - name: Checkout PR
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
