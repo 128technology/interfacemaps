@@ -285,6 +285,7 @@
     },
     "Lanner": {
       "NCA-1515": {
+        "description": "Lanner - 8 ethernet, 1 lte",
         "ethernet": [
           {
             "pciAddress": "0000:02:00.0",
@@ -411,6 +412,7 @@
       "SSR120": {
         "clei": "INMH800ERA",
         "part_number": "650-142267",
+        "description": "Juniper SSR120 - 6 ethernet",
         "ethernet": [
           {
             "pciAddress": "0000:04:00.1",
@@ -502,6 +504,7 @@
       "SSR120-AE": {
         "clei": "INMH900ERA",
         "part_number": "650-142266",
+        "description": "Juniper SSR120 - 6 ethernet, 1 lte",
         "alias":{
           "vendor": "Juniper",
           "sku": "SSR120"
@@ -538,6 +541,7 @@
       "SSR130": {
         "clei": "INMHB10ERA",
         "part_number": "650-142264",
+        "description": "Juniper SSR130 - 8 ethernet",
         "ethernet": [
           {
             "pciAddress": "0000:04:00.3",
@@ -655,6 +659,7 @@
       "SSR130-AE": {
         "clei": "INMHC10ERA",
         "part_number": "650-142263",
+        "description": "Juniper SSR130 - 8 ethernet, 1 lte",
         "alias": {
           "vendor": "Juniper",
           "sku": "SSR130"
@@ -691,6 +696,7 @@
       "SSR1200": {
         "clei": "INMJV10HRA",
         "part_number": "650-147980",
+        "description": "Juniper SSR1200 - 1 MGMT, 11 ethernet",
         "ethernet": [
           {
             "pciAddress": "0000:03:00.0",
@@ -854,6 +860,7 @@
       "SSR1300": {
         "clei": "INMJW10HRA",
         "part_number": "650-147981",
+        "description": "Juniper SSR1300 - 1 MGMT, 12 ethernet",
         "ethernet": [
           {
             "pciAddress": "0000:6a:00.0",
@@ -1030,6 +1037,7 @@
       "SSR1400": {
         "clei": "INMJX10HRA",
         "part_number": "650-147540",
+        "description": "Juniper SSR1400 - 1 MGMT, 12 ethernet",
         "ethernet": [
           {
             "pciAddress": "0000:6a:00.0",
@@ -1206,6 +1214,7 @@
       "SSR1500": {
         "clei": "INMJY10HRA",
         "part_number": "650-147539",
+        "description": "Juniper SSR1500 - 1 MGMT, 16 ethernet",
         "ethernet": [
           {
             "pciAddress": "0000:41:00.0",
