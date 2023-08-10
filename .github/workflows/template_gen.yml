@@ -4,8 +4,7 @@ on:
   pull_request:
     branches: [ "master" ]
   
-permissions:
-  contents: read
+permissions: read-all|write-all
 
 jobs:
   build:
@@ -19,7 +18,7 @@ jobs:
     - name: setup git config
       run: |
         git config user.name "GitHub Actions Bot"
-        git config user.email "shaberkorn@juniper.net"
+        git config user.email "<>"
     - name: Checkout PR
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
