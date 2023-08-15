@@ -255,7 +255,7 @@ def generate_body(devicemap):
                 ]
             }
         )
-
+    def_route_exists = False
     for index, dev_intf in enumerate(devicemap["ethernet"]):
         if dev_intf["type"] == "MGMT":
             continue
@@ -275,13 +275,14 @@ def generate_body(devicemap):
                     "dhcp": "v4",
                     "conductor": "true",
                     "management": "true",
-                    "defaultRoute": "true",
+                    "defaultRoute": "true" if not def_route_exists else False,
                     "managementVector": {
                         "priority": f"10{index}",
                         "name": "mgmt"
                     }
                 }
             ]
+            def_route_exists = True
         else:
             intf["networkInterface"] = [
                 {
