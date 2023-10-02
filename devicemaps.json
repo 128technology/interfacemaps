@@ -1446,78 +1446,78 @@
         "ethernet": [
           {
             "type": "WAN",
-            "name": "xe-1-0",
+            "name": "et-1-0",
             "description": "QSFP28 100G SR4",
             "speed": 100000,
             "pciAddress": "0000:8a:00.0",
             "bcpNetwork": {
               "standaloneBranch": {
-                "name": "xe-1-0"
+                "name": "et-1-0"
               }
             },
             "vmbusId": null
           },
           {
             "type": "HAFabric",
-            "name": "xe-1-1",
+            "name": "et-1-1",
             "description": "QSFP28 100G SR4",
             "speed": 100000,
             "pciAddress": "0000:8a:00.1",
             "bcpNetwork": {
               "standaloneBranch": {
-                "name": "xe-1-1"
+                "name": "et-1-1"
               }
             },
             "vmbusId": null
           },
           {
             "type": "LAN",
-            "name": "xe-2-0",
+            "name": "et-2-0",
             "description": "QSFP28 100G SR4",
             "speed": 100000,
             "pciAddress": "0000:51:00.0",
             "bcpNetwork": {
               "standaloneBranch": {
-                "name": "xe-2-0"
+                "name": "et-2-0"
               }
             },
             "vmbusId": null
           },
           {
             "type": "LAN",
-            "name": "xe-2-1",
+            "name": "et-2-1",
             "description": "QSFP28 100G SR4",
             "speed": 100000,
             "pciAddress": "0000:51:00.1",
             "bcpNetwork": {
               "standaloneBranch": {
-                "name": "xe-2-1"
+                "name": "et-2-1"
               }
             },
             "vmbusId": null
           },
           {
             "type": "WAN",
-            "name": "xe-7-0",
+            "name": "et-7-0",
             "description": "SFP28 25GE",
             "speed": 25000,
             "pciAddress": "0000:c4:00.0",
             "bcpNetwork": {
               "standaloneBranch": {
-                "name": "xe-7-0"
+                "name": "et-7-0"
               }
             },
             "vmbusId": null
           },
           {
             "type": "WAN",
-            "name": "xe-7-1",
+            "name": "et-7-1",
             "description": "SFP28 25GE",
             "speed": 25000,
             "pciAddress": "0000:c4:00.1",
             "bcpNetwork": {
               "standaloneBranch": {
-                "name": "xe-7-1"
+                "name": "et-7-1"
               }
             },
             "vmbusId": null
@@ -1562,40 +1562,40 @@
             "vmbusId": null
           },
           {
-            "type": "WAN",
-            "name": "xe-8-3",
+            "type": "MGMT",
+            "name": "mgmt-8-3",
             "description": "10GE RJ45",
             "speed": 10000,
             "pciAddress": "0000:c3:00.3",
             "bcpNetwork": {
               "standaloneBranch": {
-                "name": "xe-8-3"
+                "name": "mgmt-8-3"
               }
             },
             "vmbusId": null
           },
           {
             "type": "HASync",
-            "name": "xe-9-0",
+            "name": "et-9-0",
             "description": "SFP28 25GE",
             "speed": 25000,
             "pciAddress": "0000:18:00.0",
             "bcpNetwork": {
               "standaloneBranch": {
-                "name": "xe-9-0"
+                "name": "et-9-0"
               }
             },
             "vmbusId": null
           },
           {
             "type": "WAN",
-            "name": "xe-9-1",
+            "name": "et-9-1",
             "description": "SFP28 25GE",
             "speed": 25000,
             "pciAddress": "0000:18:00.1",
             "bcpNetwork": {
               "standaloneBranch": {
-                "name": "xe-9-1"
+                "name": "et-9-1"
               }
             },
             "vmbusId": null
