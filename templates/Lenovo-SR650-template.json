@@ -1,6 +1,6 @@
 {
   "name": "Lenovo-SR650-Template",
-  "description": "Adds a standalone Lenovo SR650 router: ",
+  "description": "Adds a standalone Lenovo SR650 router: 1 MGMT, 11 ethernet",
   "enabled": true,
   "persistInput": false,
   "builtin": true,
