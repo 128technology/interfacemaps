@@ -6,8 +6,8 @@ DEVICEMAP_PATH = pathlib.Path("./") / "devicemaps.json"
 TEMPLATE_DIR = pathlib.Path("./templates")
 IMG_DIR = pathlib.Path("./img")
 LTE_HELP_TIP = "LTE is available on your platform."
-BEZEL_TIP = "Below are the ports that will be assigned.\n\n### {vendor} {sku}\n\n![{vendor} {sku}](https://raw.githubusercontent.com/128technology/interfacemaps/master/img/{vendor}/{sku}/standaloneBranch.jpg)\n\n"
-HELP_TEMPLATE = "# {vendor} {sku} Router\n\nThis adds a basic {vendor} {sku} Session Smart Router to your configuration.\n{LTE_TIP}\n\n\n\n##Generate Config\nSelect the generate config icon at the top of the page, and proceed to configuration. Validate and commit to finish adding the new router to running configuration.\n\n## Port Details\nThis template assumes all WAN interfaces on your device will be connected to a network providing it DHCP address assignment, and with connectivity to your conductor.\n\nIt will configure LAN interfaces providing a DHCP server to connected endpoints. From the LAN, the router local GUI and CLI will be accessible at `192.168.128.1`\n\n{bezel_tip}"
+BEZEL_TIP = "Below are the ports that will be assigned.\n\n### {vendor} {model}\n\n![{vendor} {model}](https://raw.githubusercontent.com/128technology/interfacemaps/master/img/{vendor}/{model}/standaloneBranch.jpg)\n\n"
+HELP_TEMPLATE = "# {vendor} {model} Router\n\nThis adds a basic {vendor} {model} Session Smart Router to your configuration.\n{LTE_TIP}\n\n\n\n##Generate Config\nSelect the generate config icon at the top of the page, and proceed to configuration. Validate and commit to finish adding the new router to running configuration.\n\n## Port Details\nThis template assumes all WAN interfaces on your device will be connected to a network providing it DHCP address assignment, and with connectivity to your conductor.\n\nIt will configure LAN interfaces providing a DHCP server to connected endpoints. From the LAN, the router local GUI and CLI will be accessible at `192.168.128.1`\n\n{bezel_tip}"
 BASE_BODY = {
     "authority": {
         "security": [
@@ -211,20 +211,23 @@ def main():
             actual_devicemap = resolve_alias(devicemap, interfacemap)
             if not actual_devicemap:
                 continue
-            template = generate_template(vendor, sku, actual_devicemap)
-            write_template(vendor, sku, template)
 
-def generate_template(vendor, sku, devicemap):
+            model = devicemap.get('displayModel') or sku
+            # TODO: display model is also unique across all devicemaps?
+            template = generate_template(vendor, model, actual_devicemap)
+            write_template(vendor, model, template)
+
+def generate_template(vendor, model, devicemap):
     return {
-        "name": f"{vendor}-{sku}-Template",
-        "description": f"Adds a standalone {vendor} {sku} router: {devicemap.get('description', '')}",
+        "name": f"{vendor}-{model}-Template",
+        "description": f"Adds a standalone {vendor} {model} router: {devicemap.get('description', '')}",
         "enabled": True,
         "persistInput": False,
         "builtin": True,
         "mode": "advanced",
-        "help": format_help_msg(vendor, sku, bool(devicemap.get("lte"))),
+        "help": format_help_msg(vendor, model, bool(devicemap.get("lte"))),
         "body": f"{{% editgroup %}}\n\n{json.dumps(generate_body(devicemap), indent=2)}",
-        "schema": generate_schema(vendor, sku, devicemap)
+        "schema": generate_schema(vendor, model, devicemap)
     }
 
 
@@ -334,21 +337,21 @@ def generate_body(devicemap):
     return body
 
 
-def format_help_msg(vendor, sku, is_lte):
+def format_help_msg(vendor, model, is_lte):
     bezel_tip = BEZEL_TIP.format(
-        vendor=vendor, sku=sku) if img_exists(vendor, sku) else ""
+        vendor=vendor, model=model) if img_exists(vendor, model) else ""
     return HELP_TEMPLATE.format(
         vendor=vendor,
-        sku=sku,
+        model=model,
         LTE_TIP=LTE_HELP_TIP if is_lte else "",
         bezel_tip=bezel_tip
     )
 
-def generate_schema(vendor, sku, devicemap):
+def generate_schema(vendor, model, devicemap):
     schema = copy.deepcopy(BASE_SCHEMA)
 
-    schema["title"] = f"New {vendor} {sku} branch router"
-    schema["description"] = f"Add a new {vendor} {sku} branch router to the configuration."
+    schema["title"] = f"New {vendor} {model} branch router"
+    schema["description"] = f"Add a new {vendor} {model} branch router to the configuration."
     props = {
         "routerName": {
             "title": "Router Name",
@@ -384,7 +387,7 @@ def generate_port_schema(devicemap):
             simplified_type = port["type"]
         else:
             simplified_type = "LAN"
-        
+
         properties[port["name"]] = {
             "title": f"{simplified_type} - {port['name']}",
             "description": port["description"],
@@ -393,16 +396,16 @@ def generate_port_schema(devicemap):
     return properties
 
 
-def write_template(vendor, sku, template):
+def write_template(vendor, model, template):
     TEMPLATE_DIR.mkdir(parents=True, exist_ok=True)
 
-    template_path = TEMPLATE_DIR / f"{vendor}-{sku}-template.json"
+    template_path = TEMPLATE_DIR / f"{vendor}-{model}-template.json"
 
     template_path.write_text(json.dumps(template, indent=2))
 
 
-def img_exists(vendor, sku):
-    img_path = IMG_DIR / vendor / sku / "standaloneBranch.jpg"
+def img_exists(vendor, model):
+    img_path = IMG_DIR / vendor / model / "standaloneBranch.jpg"
     return img_path.exists()
 
 def resolve_alias(devicemap, sku_map):

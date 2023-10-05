@@ -1,6 +1,10 @@
 {
     "type": "object",
     "properties": {
+      "displayModel": {
+        "$comment": "If unspecified, defaults to key in skumap. Must also be unique between skumap keys and optional displayModels.",
+        "type": "string"
+      },
       "description": {
         "type": "string"
       },
@@ -177,4 +181,3 @@
       }
     }
   }
-  
