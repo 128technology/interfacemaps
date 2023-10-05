@@ -214,11 +214,11 @@ def main():
             if not actual_devicemap:
                 continue
 
-            model = devicemap.get('displayModel') or sku
+            model = devicemap.get("displayModel", sku)
 
             # make sure models are unique per vendor
             if model in models:
-                print("Vendor {vendor} has duplicate model {model}")
+                print(f"Vendor {vendor} has duplicate model {model}")
                 sys.exit(1)
 
             models.add(model)
@@ -227,9 +227,13 @@ def main():
             write_template(vendor, model, template)
 
 def generate_template(vendor, model, devicemap):
+    description_suffix = ""
+    if devicemap.get('description'):
+        description_suffix = f": {devicemap.get('description')}"
+
     return {
         "name": f"{vendor}-{model}-Template",
-        "description": f"Adds a standalone {vendor} {model} router: {devicemap.get('description', '')}",
+        "description": f"Adds a standalone {vendor} {model} router{description_suffix}",
         "enabled": True,
         "persistInput": False,
         "builtin": True,

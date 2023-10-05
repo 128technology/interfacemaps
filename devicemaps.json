@@ -1444,6 +1444,7 @@
     "Lenovo": {
       "7Z73CTO1WW": {
         "displayModel": "SR650",
+        "description": "1 MGMT, 11 ethernet",
         "ethernet": [
           {
             "type": "WAN",
