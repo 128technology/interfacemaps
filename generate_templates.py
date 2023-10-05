@@ -1,6 +1,7 @@
 import pathlib
 import json
 import copy
+import sys
 
 DEVICEMAP_PATH = pathlib.Path("./") / "devicemaps.json"
 TEMPLATE_DIR = pathlib.Path("./templates")
@@ -207,13 +208,21 @@ def main():
     interfacemap = json.loads(DEVICEMAP_PATH.read_text())
 
     for vendor, skus in interfacemap["interfaceMap"].items():
+        models = set()
         for sku, devicemap in skus.items():
             actual_devicemap = resolve_alias(devicemap, interfacemap)
             if not actual_devicemap:
                 continue
 
             model = devicemap.get('displayModel') or sku
-            # TODO: display model is also unique across all devicemaps?
+
+            # make sure models are unique per vendor
+            if model in models:
+                print("Vendor {vendor} has duplicate model {model}")
+                sys.exit(1)
+
+            models.add(model)
+
             template = generate_template(vendor, model, actual_devicemap)
             write_template(vendor, model, template)
 
