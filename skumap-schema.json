@@ -5,6 +5,7 @@
             "type": "object",
             "patternProperties": {
                 "^.*$": {
+                    "#comment": "This key must match dmidecode's baseboard-product-name. If another name is wanted in the template, use displayModel.",
                     "type": "object",
                     "patternProperties": {
                         "^.*$": {
