@@ -1041,6 +1041,14 @@
         ],
         "lte": []
       },
+      "SSR1300-DC": {
+        "clei": "INMJ410HRA",
+        "part_number": "650-180064",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR1300"
+        }
+      },
       "SSR1400": {
         "clei": "INMJX10HRA",
         "part_number": "650-147540",
@@ -1217,6 +1225,14 @@
           }
         ],
         "lte": []
+      },
+      "SSR1400-DC": {
+        "clei": "INMJ510HRA",
+        "part_number": "650-180065",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR1400"
+        }
       },
       "SSR1500": {
         "clei": "INMJY10HRA",
