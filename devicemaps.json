@@ -864,12 +864,6 @@
         ],
         "lte": []
       },
-      "SSR1200-DC": {
-        "alias": {
-          "vendor": "Juniper",
-          "sku": "SSR1200"
-        }
-      },
       "SSR1300": {
         "clei": "INMJW10HRA",
         "part_number": "650-147981",
@@ -1048,6 +1042,8 @@
         "lte": []
       },
       "SSR1300-DC": {
+        "clei": "INMJ410HRA",
+        "part_number": "650-180066",
         "alias": {
           "vendor": "Juniper",
           "sku": "SSR1300"
@@ -1231,6 +1227,8 @@
         "lte": []
       },
       "SSR1400-DC": {
+        "clei": "INMJ510HRA",
+        "part_number": "650-180067",
         "alias": {
           "vendor": "Juniper",
           "sku": "SSR1400"
@@ -1464,12 +1462,6 @@
           }
         ],
         "lte": []
-      },
-      "SSR1500-DC": {
-        "alias": {
-          "vendor": "Juniper",
-          "sku": "SSR1500"
-        }
       }
     },
     "Lenovo": {
