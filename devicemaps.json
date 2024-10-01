@@ -1462,6 +1462,153 @@
           }
         ],
         "lte": []
+      },
+      "SSR400":{
+        "clei": "TBD",
+        "part_number": "TBD",
+        "description": "Juniper SSR400 - 10 ethernet",
+        "ethernet": [
+          {
+            "type": "WAN",
+            "speed": 1000,
+            "name": "ge-0-0",
+            "description": "SFP Port 0 labeled on the device"
+          },
+          {
+            "type": "WAN",
+            "speed": 1000,
+            "name": "ge-0-1",
+            "description": "SFP Port 1 labeled on the device"
+          },
+          {
+            "type": "WAN",
+            "speed": 1000,
+            "name": "ge-0-2",
+            "description": "Port 2 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-3",
+            "description": "Port 3 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-4",
+            "description": "Port 4 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-5",
+            "description": "Port 5 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-6",
+            "description": "Port 6 labeled on the device"
+          },
+          {
+            "type": "HAFabric",
+            "speed": 1000,
+            "name": "ge-0-7",
+            "description": "Port 7 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-8",
+            "description": "Port 8 labeled on the device",
+            "poe": true
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-9",
+            "description": "Port 9 labeled on the device",
+            "poe": true
+          },
+          {
+            "type": "HASync",
+            "pciAddress": "0000:01:00.0",
+            "speed": 1000,
+            "name": "ha-0-0",
+            "description": "HA device interface"
+          }
+        ],
+        "lte": []
+      },
+      "SSR400-C": {
+        "clei": "TBD",
+        "part_number": "TBD",
+        "description": "Juniper SSR400-C - 10 ethernet + 5G",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR400"
+        },
+        "lte": [
+          {
+            "type": "WAN",
+            "name": "lte-0-0",
+            "description": "LTE device interface",
+            "targetInterface": "TBD"
+          }
+        ]
+      },
+      "SSR400-W": {
+        "clei": "TBD",
+        "part_number": "TBD",
+        "description": "Juniper SSR400-W - 10 ethernet + WiFi",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR400",
+          "method": "append"
+        },
+        "ethernet": [
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ap-0-0",
+            "description": "Internal AP port on the device"
+          }
+        ]
+      },
+      "SSR400-CW": {
+        "clei": "TBD",
+        "part_number": "TBD",
+        "description": "Juniper SSR400-CW - 10 ethernet + 5G + WiFi",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR400-W"
+        },
+        "lte": [
+          {
+            "type": "WAN",
+            "name": "lte-0-0",
+            "description": "LTE device interface",
+            "targetInterface": "TBD"
+          }
+        ]
+      },
+      "SSR440": {
+        "clei": "TBD",
+        "part_number": "TBD",
+        "description": "Juniper SSR440 - 10 ethernet",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR400"
+        }
+      },
+      "SSR440-C": {
+        "clei": "TBD",
+        "part_number": "TBD",
+        "description": "Juniper SSR440-C - 10 ethernet + 5G",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR400-C"
+        }
       }
     },
     "Lenovo": {
