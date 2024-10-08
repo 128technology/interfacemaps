@@ -276,12 +276,13 @@ def generate_body(devicemap):
         if dev_intf["type"] == "MGMT":
             continue
         intf = {
-            "pciAddress": dev_intf["pciAddress"],
             "description": dev_intf["description"],
             "enabled": "true",
             "forwarding": "true",
             "name": dev_intf["name"]
         }
+        if dev_intf.get("pciAddress"):
+            dev_intf["pciAddress"]
         if dev_intf["type"] == "WAN":
             intf["networkInterface"] = [
                 {
