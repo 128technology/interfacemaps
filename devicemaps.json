@@ -1534,7 +1534,7 @@
             "type": "HASync",
             "pciAddress": "0000:01:00.0",
             "speed": 1000,
-            "name": "ha-0-0",
+            "name": "ge-1-0",
             "description": "HA device interface"
           }
         ],
