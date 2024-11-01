@@ -1469,57 +1469,71 @@
         "description": "Juniper SSR400 - 10 ethernet",
         "ethernet": [
           {
+            "type": "SWITCH",
+            "name": "fte-0-0",
+            "description": "Internal switch port on the device"
+          },
+          {
             "type": "WAN",
             "speed": 1000,
             "name": "ge-0-0",
+            "parent": "fte-0-0",
             "description": "SFP Port 0 labeled on the device"
           },
           {
             "type": "WAN",
             "speed": 1000,
             "name": "ge-0-1",
+            "parent": "fte-0-0",
             "description": "SFP Port 1 labeled on the device"
           },
           {
             "type": "WAN",
             "speed": 1000,
             "name": "ge-0-2",
+            "parent": "fte-0-0",
             "description": "Port 2 labeled on the device"
           },
           {
             "type": "LAN",
             "speed": 1000,
             "name": "ge-0-3",
+            "parent": "fte-0-0",
             "description": "Port 3 labeled on the device"
           },
           {
             "type": "LAN",
             "speed": 1000,
             "name": "ge-0-4",
+            "parent": "fte-0-0",
             "description": "Port 4 labeled on the device"
           },
           {
             "type": "LAN",
             "speed": 1000,
             "name": "ge-0-5",
+            "parent": "fte-0-0",
             "description": "Port 5 labeled on the device"
           },
           {
             "type": "LAN",
             "speed": 1000,
             "name": "ge-0-6",
+            "parent": "fte-0-0",
             "description": "Port 6 labeled on the device"
           },
           {
             "type": "HAFabric",
             "speed": 1000,
             "name": "ge-0-7",
+            "parent": "fte-0-0",
             "description": "Port 7 labeled on the device"
           },
           {
             "type": "LAN",
             "speed": 1000,
             "name": "ge-0-8",
+            "parent": "fte-0-0",
             "description": "Port 8 labeled on the device",
             "poe": true
           },
@@ -1527,6 +1541,7 @@
             "type": "LAN",
             "speed": 1000,
             "name": "ge-0-9",
+            "parent": "fte-0-0",
             "description": "Port 9 labeled on the device",
             "poe": true
           },
@@ -1571,6 +1586,8 @@
             "type": "LAN",
             "speed": 1000,
             "name": "ap-0-0",
+            "ap": true,
+            "parent": "fte-0-0",
             "description": "Internal AP port on the device"
           }
         ]

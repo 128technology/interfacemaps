@@ -26,7 +26,7 @@
         "properties": {
           "name": {
             "type": "string",
-            "pattern": "^(ge|xe|et|mgmt|ap)-[0-9]+(-[0-9]+)?$"
+            "pattern": "^(ge|xe|et|mgmt|ap|fte)-[0-9]+(-[0-9]+)?$"
           },
           "type": {
             "type": "string",
@@ -36,6 +36,7 @@
               "HASync",
               "HAFabric",
               "MGMT",
+              "SWITCH",
               "UNUSED",
               "IGNORE"
             ]
@@ -59,6 +60,9 @@
           },
           "poe": {
             "type": "boolean"
+          },
+          "ap": {
+            "type": "boolean"
           }
         },
         "required": [
@@ -74,6 +78,9 @@
               },
               "vmbusId": {
                 "type": "null"
+              },
+              "parent": {
+                "type": "null"
               }
             },
             "required": [
@@ -88,6 +95,9 @@
               "vmbusId": {
                 "type": "string",
                 "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+              },
+              "parent": {
+                "type": "null"
               }
             },
             "required": [
@@ -101,8 +111,15 @@
               },
               "vmbusId": {
                 "type": "null"
+              },
+              "parent": {
+                "type":"string",
+                "pattern": "^fte-[0-9]+(-[0-9]+)?$"
               }
-            }
+            },
+            "required": [
+              "parent"
+            ]
           }
         ]
       }
