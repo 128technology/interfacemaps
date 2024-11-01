@@ -433,9 +433,9 @@ def resolve_alias(devicemap, sku_map):
         ),
         sku_map,
     )
-    method = device_map["alias"].get("method", "")
+    method = devicemap["alias"].get("method", "")
 
-    del device_map["alias"]
+    del devicemap["alias"]
 
     if not alias_map.get("ethernet"):
         alias_map["ethernet"] = []
@@ -444,11 +444,11 @@ def resolve_alias(devicemap, sku_map):
 
     if method.lower() == "append":
         try:
-            alias_map["ethernet"].extend(device_map.pop("ethernet"))
+            alias_map["ethernet"].extend(devicemap.pop("ethernet"))
         except KeyError:
             pass
         try:
-            alias_map["lte"].extend(device_map.pop("lte"))
+            alias_map["lte"].extend(devicemap.pop("lte"))
         except KeyError:
             pass
 
