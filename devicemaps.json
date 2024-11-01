@@ -1469,7 +1469,7 @@
         "description": "Juniper SSR400 - 10 ethernet",
         "ethernet": [
           {
-            "type": "SWITCH",
+            "type": "SWITCH_PARENT",
             "name": "fte-0-0",
             "description": "Internal switch port on the device"
           },

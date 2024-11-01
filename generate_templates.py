@@ -273,7 +273,7 @@ def generate_body(devicemap):
         )
     def_route_exists = False
     for index, dev_intf in enumerate(devicemap["ethernet"]):
-        if dev_intf["type"] in ["MGMT", "SWITCH"]:
+        if dev_intf["type"] in ["MGMT", "SWITCH_PARENT"]:
             continue
         intf = {"pciAddress": dev_intf["pciAddress"]} if dev_intf.get("pciAddress") else {}
         intf.update({
