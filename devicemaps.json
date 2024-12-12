@@ -1466,11 +1466,13 @@
       "SSR400":{
         "clei": "TBD",
         "part_number": "650-178218",
+        "deviceType": "juniper-manufactured",
         "description": "Juniper SSR400 - 10 ethernet",
         "ethernet": [
           {
             "type": "SWITCH_PARENT",
             "name": "fte-0-0",
+            "linux-name": "eth0",
             "description": "Internal switch port on the device"
           },
           {
