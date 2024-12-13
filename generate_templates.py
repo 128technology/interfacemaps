@@ -452,6 +452,7 @@ def resolve_alias(devicemap, sku_map):
         except KeyError:
             pass
 
+    alias_map.update(devicemap)
     return alias_map
 
 def lookup_devicemap(vendor, sku, sku_map):
