@@ -1463,7 +1463,7 @@
         ],
         "lte": []
       },
-      "SSR400":{
+      "SSR400": {
         "clei": "TBD",
         "part_number": "650-178218",
         "deviceType": "juniper-manufactured",
@@ -1574,10 +1574,10 @@
           }
         ]
       },
-      "SSR400-W": {
+      "SSR400-W-US": {
         "clei": "TBD",
         "part_number": "650-178219",
-        "description": "Juniper SSR400-W - 10 ethernet + WiFi",
+        "description": "Juniper SSR400-W-US - 10 ethernet + WiFi",
         "alias": {
           "vendor": "Juniper",
           "sku": "SSR400",
@@ -1594,13 +1594,13 @@
           }
         ]
       },
-      "SSR400-CW": {
+      "SSR400-CW-US": {
         "clei": "TBD",
         "part_number": "650-178221",
-        "description": "Juniper SSR400-CW - 10 ethernet + 5G + WiFi",
+        "description": "Juniper SSR400-CW-US - 10 ethernet + 5G + WiFi",
         "alias": {
           "vendor": "Juniper",
-          "sku": "SSR400-W"
+          "sku": "SSR400-W-US"
         },
         "lte": [
           {
@@ -1628,7 +1628,43 @@
           "vendor": "Juniper",
           "sku": "SSR400-C"
         }
-      }
+      },
+      "SSR400-W-WW": {
+        "clei": "TBD",
+        "part_number": "650-178535",
+        "description": "Juniper SSR400-W-WW - 10 ethernet + WiFi",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR400-W-US"
+        }
+      },
+      "SSR400-CW-WW": {
+        "clei": "TBD",
+        "part_number": "650-178536",
+        "description": "Juniper SSR400-CW-WW - 10 ethernet + 5G + WiFi",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR400-CW-US"
+        }
+      },
+      "SSR440-2AC": {
+        "clei": "TBD",
+        "part_number": "650-178537",
+        "description": "Juniper SSR440-2AC - 10 ethernet + 2AC",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR440"
+        }
+      },
+      "SSR440-C-2AC": {
+        "clei": "TBD",
+        "part_number": "650-178538",
+        "description": "Juniper SSR440-C-2AC - 10 ethernet + 5G + 2AC",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR440-C"
+        }
+      },
     },
     "Lenovo": {
       "7Z73CTO1WW": {
