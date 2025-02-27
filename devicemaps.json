@@ -1467,7 +1467,7 @@
         "clei": "TBD",
         "part_number": "650-178218",
         "deviceType": "juniper-manufactured",
-        "description": "Juniper SSR400 - 10 ethernet",
+        "description": "Juniper SSR400 - 10 ethernet ports",
         "ethernet": [
           {
             "type": "SWITCH_PARENT",
@@ -1560,7 +1560,7 @@
       "SSR400-C": {
         "clei": "TBD",
         "part_number": "650-178220",
-        "description": "Juniper SSR400-C - 10 ethernet + 5G",
+        "description": "Juniper SSR400-C - 10 ethernet ports + 5G",
         "alias": {
           "vendor": "Juniper",
           "sku": "SSR400"
@@ -1577,7 +1577,7 @@
       "SSR400-W-US": {
         "clei": "TBD",
         "part_number": "650-178219",
-        "description": "Juniper SSR400-W-US - 10 ethernet + WiFi",
+        "description": "Juniper SSR400-W-US - 10 ethernet ports + WiFi",
         "alias": {
           "vendor": "Juniper",
           "sku": "SSR400",
@@ -1597,7 +1597,7 @@
       "SSR400-CW-US": {
         "clei": "TBD",
         "part_number": "650-178221",
-        "description": "Juniper SSR400-CW-US - 10 ethernet + 5G + WiFi",
+        "description": "Juniper SSR400-CW-US - 10 ethernet ports + 5G + WiFi",
         "alias": {
           "vendor": "Juniper",
           "sku": "SSR400-W-US"
@@ -1614,7 +1614,7 @@
       "SSR440": {
         "clei": "TBD",
         "part_number": "650-178222",
-        "description": "Juniper SSR440 - 10 ethernet",
+        "description": "Juniper SSR440 - 10 ethernet ports",
         "alias": {
           "vendor": "Juniper",
           "sku": "SSR400"
@@ -1623,7 +1623,7 @@
       "SSR440-C": {
         "clei": "TBD",
         "part_number": "650-178223",
-        "description": "Juniper SSR440-C - 10 ethernet + 5G",
+        "description": "Juniper SSR440-C - 10 ethernet ports + 5G",
         "alias": {
           "vendor": "Juniper",
           "sku": "SSR400-C"
@@ -1632,7 +1632,7 @@
       "SSR400-W-WW": {
         "clei": "TBD",
         "part_number": "650-178535",
-        "description": "Juniper SSR400-W-WW - 10 ethernet + WiFi",
+        "description": "Juniper SSR400-W-WW - 10 ethernet ports + WiFi",
         "alias": {
           "vendor": "Juniper",
           "sku": "SSR400-W-US"
@@ -1641,7 +1641,7 @@
       "SSR400-CW-WW": {
         "clei": "TBD",
         "part_number": "650-178536",
-        "description": "Juniper SSR400-CW-WW - 10 ethernet + 5G + WiFi",
+        "description": "Juniper SSR400-CW-WW - 10 ethernet ports + 5G + WiFi",
         "alias": {
           "vendor": "Juniper",
           "sku": "SSR400-CW-US"
@@ -1650,7 +1650,7 @@
       "SSR440-2AC": {
         "clei": "TBD",
         "part_number": "650-178537",
-        "description": "Juniper SSR440-2AC - 10 ethernet + 2AC",
+        "description": "Juniper SSR440-2AC - 10 ethernet ports + 2AC",
         "alias": {
           "vendor": "Juniper",
           "sku": "SSR440"
@@ -1659,7 +1659,7 @@
       "SSR440-C-2AC": {
         "clei": "TBD",
         "part_number": "650-178538",
-        "description": "Juniper SSR440-C-2AC - 10 ethernet + 5G + 2AC",
+        "description": "Juniper SSR440-C-2AC - 10 ethernet ports + 5G + 2AC",
         "alias": {
           "vendor": "Juniper",
           "sku": "SSR440-C"
