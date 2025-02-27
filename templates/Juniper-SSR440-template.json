@@ -1,6 +1,6 @@
 {
   "name": "Juniper-SSR440-Template",
-  "description": "Adds a standalone Juniper SSR440 router: Juniper SSR440 - 10 ethernet",
+  "description": "Adds a standalone Juniper SSR440 router: Juniper SSR440 - 10 ethernet ports",
   "enabled": true,
   "persistInput": false,
   "builtin": true,

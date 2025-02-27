@@ -1,6 +1,6 @@
 {
   "name": "Juniper-SSR400-C-Template",
-  "description": "Adds a standalone Juniper SSR400-C router: Juniper SSR400-C - 10 ethernet + 5G",
+  "description": "Adds a standalone Juniper SSR400-C router: Juniper SSR400-C - 10 ethernet ports + 5G",
   "enabled": true,
   "persistInput": false,
   "builtin": true,

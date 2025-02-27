@@ -1,6 +1,6 @@
 {
   "name": "Juniper-SSR400-CW-WW-Template",
-  "description": "Adds a standalone Juniper SSR400-CW-WW router: Juniper SSR400-CW-WW - 10 ethernet + 5G + WiFi",
+  "description": "Adds a standalone Juniper SSR400-CW-WW router: Juniper SSR400-CW-WW - 10 ethernet ports + 5G + WiFi",
   "enabled": true,
   "persistInput": false,
   "builtin": true,

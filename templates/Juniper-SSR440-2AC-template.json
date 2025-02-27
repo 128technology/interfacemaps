@@ -1,6 +1,6 @@
 {
   "name": "Juniper-SSR440-2AC-Template",
-  "description": "Adds a standalone Juniper SSR440-2AC router: Juniper SSR440-2AC - 10 ethernet + 2AC",
+  "description": "Adds a standalone Juniper SSR440-2AC router: Juniper SSR440-2AC - 10 ethernet ports + 2AC",
   "enabled": true,
   "persistInput": false,
   "builtin": true,
