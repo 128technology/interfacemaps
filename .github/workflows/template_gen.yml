@@ -8,13 +8,13 @@ permissions: write-all
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: Set up Python 3.6
-      uses: actions/setup-python@v3
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v5
       with:
-        python-version: "3.6"
+        python-version: "3.9"
     - name: setup git config
       run: |
         git config user.name "GitHub Actions Bot"
