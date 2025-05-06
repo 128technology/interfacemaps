@@ -1570,7 +1570,7 @@
             "type": "WAN",
             "name": "lte-0-0",
             "description": "LTE device interface",
-            "targetInterface": "TBD"
+            "targetInterface": "mhi_netdev0"
           }
         ]
       },
@@ -1607,7 +1607,7 @@
             "type": "WAN",
             "name": "lte-0-0",
             "description": "LTE device interface",
-            "targetInterface": "TBD"
+            "targetInterface": "mhi_netdev0"
           }
         ]
       },
