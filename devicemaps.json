@@ -1473,6 +1473,7 @@
             "type": "SWITCH_PARENT",
             "name": "fte-0-0",
             "linux-name": "esw0",
+            "pciAddress": "0000:01:00.0",
             "description": "Internal switch port on the device"
           },
           {

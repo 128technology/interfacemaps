@@ -171,6 +171,11 @@
               "linux-name": {
                 "type": "string"
               },
+              "pciAddress": {
+                "type": "string",
+                "description": "The PCI address of a switch connection, this won't be used to configure this interface.",
+                "pattern": "^[0-9a-fA-F]{4}(:[0-9a-fA-F]{2}){2}\\.[0-7]$"
+              },
               "type": {
                 "type": "string",
                 "enum": [
@@ -181,7 +186,8 @@
             "required": [
               "name",
               "type",
-              "linux-name"
+              "linux-name",
+              "pciAddress"
             ]
           }
         ]
