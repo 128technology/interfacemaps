@@ -1559,7 +1559,7 @@
           },
           {
             "type": "HASync",
-            "pciAddress": "0000:01:00.0",
+            "macIndex": 0,
             "speed": 1000,
             "name": "ha-0-0",
             "description": "HA device interface"

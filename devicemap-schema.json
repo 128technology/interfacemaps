@@ -132,6 +132,27 @@
                 "required": [
                   "parent"
                 ]
+              },
+              {
+                "properties": {
+                  "pciAddress": {
+                    "type": "null"
+                  },
+                  "vmbusId": {
+                    "type": "null"
+                  },
+                  "parent": {
+                    "type": "null"
+                  },
+                  "macIndex": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "For non-pci based, non-forwarding interfaces, this is the order to use for picking mac addresses. Only used for HA on SSR400/440 right now."
+                  }
+                },
+                "required": [
+                  "macIndex"
+                ]
               }
             ]
           },
