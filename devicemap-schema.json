@@ -14,13 +14,13 @@
     "description": {
       "type": "string"
     },
-    "platform-capabilities": {
+    "platformCapabilities": {
       "type": "array",
       "items": {
         "type": "string",
         "enum": [
           "recovery-mode",
-          "disable-reset-button",
+          "reset-button",
           "no-pci-on-forwarding-interfaces",
           "interface-name-on-forwarding-interfaces"
         ]
