@@ -1468,6 +1468,12 @@
         "part_number": "650-178218",
         "deviceType": "juniper-manufactured",
         "description": "Juniper SSR400 - 10 ethernet ports",
+        "platformCapabilities": [
+          "recovery-mode",
+          "reset-button",
+          "no-pci-on-forwarding-interfaces",
+          "interface-name-on-forwarding-interfaces"
+        ],
         "ethernet": [
           {
             "type": "SWITCH_PARENT",
