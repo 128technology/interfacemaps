@@ -425,6 +425,9 @@ def resolve_alias(devicemap, sku_map):
     if not devicemap.get("alias"):
         return devicemap
 
+    if not (devicemap.get("ethernet") or devicemap.get("lte")):
+        return None
+
     alias_map = resolve_alias(
         lookup_devicemap(
             devicemap["alias"]["vendor"],
