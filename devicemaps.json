@@ -1462,6 +1462,226 @@
           }
         ],
         "lte": []
+      },
+      "SSR400": {
+        "clei": "TBD",
+        "part_number": "650-178218",
+        "deviceType": "juniper-manufactured",
+        "description": "Juniper SSR400 - 10 ethernet ports",
+        "platformCapabilities": [
+          "recovery-mode",
+          "reset-button",
+          "no-pci-on-forwarding-interfaces",
+          "interface-name-on-forwarding-interfaces"
+        ],
+        "ethernet": [
+          {
+            "type": "SWITCH_PARENT",
+            "name": "fte-0-0",
+            "linux-name": "esw0",
+            "pciAddress": "0000:01:00.0",
+            "description": "Internal switch port on the device"
+          },
+          {
+            "type": "WAN",
+            "speed": 1000,
+            "name": "ge-0-0",
+            "parent": "fte-0-0",
+            "switch_address": 9,
+            "description": "SFP Port 0 labeled on the device"
+          },
+          {
+            "type": "WAN",
+            "speed": 1000,
+            "name": "ge-0-1",
+            "parent": "fte-0-0",
+            "switch_address": 10,
+            "description": "SFP Port 1 labeled on the device"
+          },
+          {
+            "type": "WAN",
+            "speed": 1000,
+            "name": "ge-0-2",
+            "parent": "fte-0-0",
+            "switch_address": 0,
+            "description": "Port 2 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-3",
+            "parent": "fte-0-0",
+            "switch_address": 1,
+            "description": "Port 3 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-4",
+            "parent": "fte-0-0",
+            "switch_address": 2,
+            "description": "Port 4 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-5",
+            "parent": "fte-0-0",
+            "switch_address": 3,
+            "description": "Port 5 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-6",
+            "parent": "fte-0-0",
+            "switch_address": 4,
+            "description": "Port 6 labeled on the device"
+          },
+          {
+            "type": "HAFabric",
+            "speed": 1000,
+            "name": "ge-0-7",
+            "parent": "fte-0-0",
+            "switch_address": 5,
+            "description": "Port 7 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-8",
+            "parent": "fte-0-0",
+            "switch_address": 6,
+            "description": "Port 8 labeled on the device",
+            "poe": true
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-9",
+            "parent": "fte-0-0",
+            "switch_address": 7,
+            "description": "Port 9 labeled on the device",
+            "poe": true
+          },
+          {
+            "type": "HASync",
+            "macIndex": 0,
+            "speed": 1000,
+            "name": "ha-0-0",
+            "description": "HA device interface"
+          }
+        ],
+        "lte": []
+      },
+      "SSR400-C": {
+        "clei": "TBD",
+        "part_number": "650-178220",
+        "description": "Juniper SSR400-C - 10 ethernet ports + 5G",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR400"
+        },
+        "lte": [
+          {
+            "type": "WAN",
+            "name": "lte-0-0",
+            "description": "LTE device interface",
+            "targetInterface": "mhi_netdev0"
+          }
+        ]
+      },
+      "SSR400-W-US": {
+        "clei": "TBD",
+        "part_number": "650-178219",
+        "description": "Juniper SSR400-W-US - 10 ethernet ports + WiFi",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR400",
+          "method": "append"
+        },
+        "ethernet": [
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ap-0-0",
+            "ap": true,
+            "parent": "fte-0-0",
+            "switch_address": 8,
+            "description": "Internal AP port on the device"
+          }
+        ]
+      },
+      "SSR400-CW-US": {
+        "clei": "TBD",
+        "part_number": "650-178221",
+        "description": "Juniper SSR400-CW-US - 10 ethernet ports + 5G + WiFi",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR400-W-US"
+        },
+        "lte": [
+          {
+            "type": "WAN",
+            "name": "lte-0-0",
+            "description": "LTE device interface",
+            "targetInterface": "mhi_netdev0"
+          }
+        ]
+      },
+      "SSR440": {
+        "clei": "TBD",
+        "part_number": "650-178222",
+        "description": "Juniper SSR440 - 10 ethernet ports",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR400"
+        }
+      },
+      "SSR440-C": {
+        "clei": "TBD",
+        "part_number": "650-178223",
+        "description": "Juniper SSR440-C - 10 ethernet ports + 5G",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR400-C"
+        }
+      },
+      "SSR400-W-WW": {
+        "clei": "TBD",
+        "part_number": "650-178535",
+        "description": "Juniper SSR400-W-WW - 10 ethernet ports + WiFi",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR400-W-US"
+        }
+      },
+      "SSR400-CW-WW": {
+        "clei": "TBD",
+        "part_number": "650-178536",
+        "description": "Juniper SSR400-CW-WW - 10 ethernet ports + 5G + WiFi",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR400-CW-US"
+        }
+      },
+      "SSR440-2AC": {
+        "clei": "TBD",
+        "part_number": "650-178537",
+        "description": "Juniper SSR440-2AC - 10 ethernet ports + 2AC",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR440"
+        }
+      },
+      "SSR440-C-2AC": {
+        "clei": "TBD",
+        "part_number": "650-178538",
+        "description": "Juniper SSR440-C-2AC - 10 ethernet ports + 5G + 2AC",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR440-C"
+        }
       }
     },
     "Lenovo": {

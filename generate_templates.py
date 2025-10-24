@@ -273,15 +273,15 @@ def generate_body(devicemap):
         )
     def_route_exists = False
     for index, dev_intf in enumerate(devicemap["ethernet"]):
-        if dev_intf["type"] == "MGMT":
+        if dev_intf["type"] in ["MGMT", "SWITCH_PARENT"]:
             continue
-        intf = {
-            "pciAddress": dev_intf["pciAddress"],
+        intf = {"pciAddress": dev_intf["pciAddress"]} if dev_intf.get("pciAddress") else {}
+        intf.update({
             "description": dev_intf["description"],
             "enabled": "true",
             "forwarding": "true",
             "name": dev_intf["name"]
-        }
+        })
         if dev_intf["type"] == "WAN":
             intf["networkInterface"] = [
                 {
@@ -424,8 +424,10 @@ def img_exists(vendor, model):
 def resolve_alias(devicemap, sku_map):
     if not devicemap.get("alias"):
         return devicemap
+
     if not (devicemap.get("ethernet") or devicemap.get("lte")):
         return None
+
     alias_map = resolve_alias(
         lookup_devicemap(
             devicemap["alias"]["vendor"],
@@ -434,7 +436,25 @@ def resolve_alias(devicemap, sku_map):
         ),
         sku_map,
     )
+    method = devicemap["alias"].get("method", "")
+
     del devicemap["alias"]
+
+    if not alias_map.get("ethernet"):
+        alias_map["ethernet"] = []
+    if not alias_map.get("lte"):
+        alias_map["lte"] = []
+
+    if method.lower() == "append":
+        try:
+            alias_map["ethernet"].extend(devicemap.pop("ethernet"))
+        except KeyError:
+            pass
+        try:
+            alias_map["lte"].extend(devicemap.pop("lte"))
+        except KeyError:
+            pass
+
     alias_map.update(devicemap)
     return alias_map
 
