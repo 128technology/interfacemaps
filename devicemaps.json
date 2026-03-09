@@ -864,6 +864,15 @@
         ],
         "lte": []
       },
+      "SSR1200-E": {
+        "clei": "INMJV10HRA",
+        "part_number": "650-147980",
+        "description": "Juniper SSR1200-E - 1 MGMT, 11 ethernet",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR1200"
+        }
+      },
       "SSR1300": {
         "clei": "INMJW10HRA",
         "part_number": "650-147981",
@@ -1462,6 +1471,15 @@
           }
         ],
         "lte": []
+      },
+      "SSR1500-E": {
+        "clei": "INMJY10HRA",
+        "part_number": "650-147539",
+        "description": "Juniper SSR1500-E - 1 MGMT, 16 ethernet",
+        "alias": {
+          "vendor": "Juniper",
+          "sku": "SSR1500"
+        }
       },
       "SSR400": {
         "clei": "TBD",
