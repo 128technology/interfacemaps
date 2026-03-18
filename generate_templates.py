@@ -4,6 +4,7 @@ import copy
 import sys
 
 DEVICEMAP_PATH = pathlib.Path("./") / "devicemaps.json"
+TEMPLATE_SKU_PATH = pathlib.Path("./") / "template-skus.txt"
 TEMPLATE_DIR = pathlib.Path("./templates")
 IMG_DIR = pathlib.Path("./img")
 LTE_HELP_TIP = "LTE is available on your platform."
@@ -205,26 +206,31 @@ BASE_SCHEMA = {
 
 
 def main():
+    template_skus = TEMPLATE_SKU_PATH.read_text().splitlines()
+
     interfacemap = json.loads(DEVICEMAP_PATH.read_text())
+    
+    models = set()
 
-    for vendor, skus in interfacemap["interfaceMap"].items():
-        models = set()
-        for sku, devicemap in skus.items():
-            actual_devicemap = resolve_alias(devicemap, interfacemap)
-            if not actual_devicemap:
-                continue
+    for template_sku in template_skus:
+        vendor, sku = template_sku.split(maxsplit=1)
+        devicemap = interfacemap["interfaceMap"][vendor][sku]
+        actual_devicemap = resolve_alias(devicemap, interfacemap)
 
-            model = devicemap.get("displayModel", sku)
+        if not actual_devicemap:
+            continue
 
-            # make sure models are unique per vendor
-            if model in models:
-                print(f"Vendor {vendor} has duplicate model {model}")
-                sys.exit(1)
+        model = devicemap.get("displayModel", sku)
 
-            models.add(model)
+        # make sure models are unique per vendor
+        if model in models:
+            print(f"Vendor {vendor} has duplicate model {model}")
+            sys.exit(1)
 
-            template = generate_template(vendor, model, actual_devicemap)
-            write_template(vendor, model, template)
+        models.add(model)
+
+        template = generate_template(vendor, model, actual_devicemap)
+        write_template(vendor, model, template)
 
 def generate_template(vendor, model, devicemap):
     description_suffix = ""
@@ -239,12 +245,12 @@ def generate_template(vendor, model, devicemap):
         "builtin": True,
         "mode": "advanced",
         "help": format_help_msg(vendor, model, bool(devicemap.get("lte"))),
-        "body": f"{{% editgroup %}}\n\n{json.dumps(generate_body(devicemap), indent=2)}",
+        "body": f"{{% editgroup %}}\n\n{json.dumps(generate_body(devicemap, model), indent=2)}",
         "schema": generate_schema(vendor, model, devicemap)
     }
 
 
-def generate_body(devicemap):
+def generate_body(devicemap, model):
     device_interfaces = []
     for index, lte_interface in enumerate(devicemap.get("lte", [])):
         device_interfaces.append(
@@ -276,6 +282,8 @@ def generate_body(devicemap):
         if dev_intf["type"] in ["MGMT", "SWITCH_PARENT"]:
             continue
         intf = {"pciAddress": dev_intf["pciAddress"]} if dev_intf.get("pciAddress") else {}
+        if dev_intf.get("parent"):
+            intf["interfaceName"] = dev_intf["name"]
         intf.update({
             "description": dev_intf["description"],
             "enabled": "true",
@@ -285,7 +293,7 @@ def generate_body(devicemap):
         if dev_intf["type"] == "WAN":
             intf["networkInterface"] = [
                 {
-                    "name": dev_intf.get("bcpNetwork", {}).get("standaloneBranch", {}).get("name", f"{dev_intf['name']} Network Interface"),
+                    "name": dev_intf.get("bcpNetwork", {}).get("standaloneBranch", {}).get("name", f"{dev_intf['name']}"),
                     "description": dev_intf.get("bcpNetwork", {}).get("standaloneBranch", {}).get("description", ""),
                     "sourceNat": "true",
                     "dhcp": "v4",
@@ -302,7 +310,7 @@ def generate_body(devicemap):
         else:
             intf["networkInterface"] = [
                 {
-                    "name": dev_intf.get("bcpNetwork", {}).get("standaloneBranch", {}).get("name", f"{dev_intf['name']} Network Interface"),
+                    "name": dev_intf.get("bcpNetwork", {}).get("standaloneBranch", {}).get("name", f"{dev_intf['name']}"),
                     "description": dev_intf.get("bcpNetwork", {}).get("standaloneBranch", {}).get("description", ""),
                     "address": [
                         {
@@ -346,6 +354,9 @@ def generate_body(devicemap):
     body = copy.deepcopy(BASE_BODY)
 
     body["authority"]["router"][0]["_value"]["node"][0]["deviceInterface"] = device_interfaces
+
+    if devicemap.get("platformCapabilities"):
+        body["authority"]["router"][0]["_value"]["node"][0]["platformType"] = model
 
     return body
 
@@ -396,6 +407,8 @@ def generate_schema(vendor, model, devicemap):
 def generate_port_schema(devicemap):
     properties = {}
     for port in devicemap["ethernet"] + devicemap.get("lte", []):
+        if port["type"] in ["SWITCH_PARENT"]:
+            continue
         if port["type"] in ["MGMT", "WAN", "LTE"]:
             simplified_type = port["type"]
         else:
