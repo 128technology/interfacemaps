@@ -281,6 +281,8 @@ def generate_body(devicemap, model):
     for index, dev_intf in enumerate(devicemap["ethernet"]):
         if dev_intf["type"] in ["MGMT", "SWITCH_PARENT"]:
             continue
+        if dev_intf["type"] == "HASync" and "macIndex" in dev_intf:
+            continue
         intf = {"pciAddress": dev_intf["pciAddress"]} if dev_intf.get("pciAddress") else {}
         if dev_intf.get("parent"):
             intf["interfaceName"] = dev_intf["name"]
