@@ -10,6 +10,8 @@ Juniper SSR400
 Juniper SSR400-C
 Juniper SSR440
 Juniper SSR440-C
+Juniper SSR460-AC
+Juniper SSR480-AC
 Lanner NCA-1515
 Lenovo 7Z73CTO1WW
 Silicom 90500-0151-

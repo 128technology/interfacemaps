@@ -1700,6 +1700,358 @@
           "vendor": "Juniper",
           "sku": "SSR440-C"
         }
+      },
+      "SSR460-AC": {
+        "clei": "TBD",
+        "part_number": "650-178224",
+        "deviceType": "juniper-manufactured",
+        "description": "Juniper SSR460-AC - 16 ethernet ports",
+        "platformCapabilities": [
+          "recovery-mode",
+          "reset-button",
+          "no-pci-on-forwarding-interfaces",
+          "interface-name-on-forwarding-interfaces"
+        ],
+        "ethernet": [
+          {
+            "type": "SWITCH_PARENT",
+            "name": "fte-0-0",
+            "linux-name": "esw0",
+            "pciAddress": "0002:04:00.0",
+            "description": "Internal switch port on the device"
+          },
+          {
+            "type": "WAN",
+            "speed": 1000,
+            "name": "ge-0-0",
+            "parent": "fte-0-0",
+            "switch_address": 0,
+            "description": "Port 0 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-1",
+            "parent": "fte-0-0",
+            "switch_address": 1,
+            "description": "Port 1 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-2",
+            "parent": "fte-0-0",
+            "switch_address": 2,
+            "description": "Port 2 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-3",
+            "parent": "fte-0-0",
+            "switch_address": 3,
+            "description": "Port 3 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-4",
+            "parent": "fte-0-0",
+            "switch_address": 4,
+            "description": "Port 4 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-5",
+            "parent": "fte-0-0",
+            "switch_address": 5,
+            "description": "Port 5 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-6",
+            "parent": "fte-0-0",
+            "switch_address": 6,
+            "description": "Port 6 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-7",
+            "parent": "fte-0-0",
+            "switch_address": 7,
+            "description": "Port 7 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-8",
+            "parent": "fte-0-0",
+            "switch_address": 8,
+            "description": "Port 8 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-9",
+            "parent": "fte-0-0",
+            "switch_address": 9,
+            "description": "Port 9 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-10",
+            "parent": "fte-0-0",
+            "switch_address": 10,
+            "description": "Port 10 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-11",
+            "parent": "fte-0-0",
+            "switch_address": 11,
+            "description": "Port 11 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-12",
+            "parent": "fte-0-0",
+            "switch_address": 12,
+            "description": "Port 12 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-13",
+            "parent": "fte-0-0",
+            "switch_address": 13,
+            "description": "Port 13 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 10000,
+            "name": "xe-0-14",
+            "parent": "fte-0-0",
+            "switch_address": 14,
+            "description": "Port 14 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 10000,
+            "name": "xe-0-15",
+            "parent": "fte-0-0",
+            "switch_address": 15,
+            "description": "Port 15 labeled on the device"
+          },
+          {
+            "type": "MGMT",
+            "macIndex": 2,
+            "speed": 1000,
+            "name": "mgmt-0-0",
+            "description": "Port MGMT labeled on the device"
+          },
+          {
+            "type": "HASync",
+            "macIndex": 1,
+            "speed": 1000,
+            "name": "ha-0-0",
+            "description": "HA device interface"
+          }
+        ],
+        "lte": []
+      },
+      "SSR480-AC": {
+        "clei": "TBD",
+        "part_number": "650-178226",
+        "description": "Juniper SSR480-AC - 20 ethernet ports",
+        "ethernet": [
+          {
+            "type": "SWITCH_PARENT",
+            "name": "fte-0-0",
+            "linux-name": "esw0",
+            "pciAddress": "0002:04:00.0",
+            "description": "Internal switch port on the device"
+          },
+          {
+            "type": "WAN",
+            "speed": 1000,
+            "name": "ge-0-0",
+            "parent": "fte-0-0",
+            "switch_address": 0,
+            "description": "Port 0 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-1",
+            "parent": "fte-0-0",
+            "switch_address": 1,
+            "description": "Port 1 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-2",
+            "parent": "fte-0-0",
+            "switch_address": 2,
+            "description": "Port 2 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-3",
+            "parent": "fte-0-0",
+            "switch_address": 3,
+            "description": "Port 3 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-4",
+            "parent": "fte-0-0",
+            "switch_address": 4,
+            "description": "Port 4 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-5",
+            "parent": "fte-0-0",
+            "switch_address": 5,
+            "description": "Port 5 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-6",
+            "parent": "fte-0-0",
+            "switch_address": 6,
+            "description": "Port 6 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-7",
+            "parent": "fte-0-0",
+            "switch_address": 7,
+            "description": "Port 7 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-8",
+            "parent": "fte-0-0",
+            "switch_address": 8,
+            "description": "Port 8 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-9",
+            "parent": "fte-0-0",
+            "switch_address": 9,
+            "description": "Port 9 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-10",
+            "parent": "fte-0-0",
+            "switch_address": 10,
+            "description": "Port 10 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-11",
+            "parent": "fte-0-0",
+            "switch_address": 11,
+            "description": "Port 11 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-12",
+            "parent": "fte-0-0",
+            "switch_address": 12,
+            "description": "Port 12 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-13",
+            "parent": "fte-0-0",
+            "switch_address": 13,
+            "description": "Port 13 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-14",
+            "parent": "fte-0-0",
+            "switch_address": 14,
+            "description": "Port 14 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 1000,
+            "name": "ge-0-15",
+            "parent": "fte-0-0",
+            "switch_address": 15,
+            "description": "Port 15 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 10000,
+            "name": "xe-0-16",
+            "parent": "fte-0-0",
+            "switch_address": 16,
+            "description": "Port 16 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 10000,
+            "name": "xe-0-17",
+            "parent": "fte-0-0",
+            "switch_address": 17,
+            "description": "Port 17 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 10000,
+            "name": "xe-0-18",
+            "parent": "fte-0-0",
+            "switch_address": 18,
+            "description": "Port 18 labeled on the device"
+          },
+          {
+            "type": "LAN",
+            "speed": 10000,
+            "name": "xe-0-19",
+            "parent": "fte-0-0",
+            "switch_address": 19,
+            "description": "Port 19 labeled on the device"
+          },
+          {
+            "type": "MGMT",
+            "macIndex": 2,
+            "speed": 1000,
+            "name": "mgmt-0-0",
+            "description": "Port MGMT labeled on the device"
+          },
+          {
+            "type": "HASync",
+            "macIndex": 1,
+            "speed": 1000,
+            "name": "ha-0-0",
+            "description": "HA device interface"
+          }
+        ]
       }
     },
     "Lenovo": {
