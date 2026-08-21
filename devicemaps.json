@@ -1853,6 +1853,7 @@
             "macIndex": 1,
             "speed": 1000,
             "name": "mgmt-0-0",
+            "linux-name": "eth0",
             "description": "Port MGMT labeled on the device"
           },
           {
@@ -1860,6 +1861,7 @@
             "macIndex": 0,
             "speed": 1000,
             "name": "ha-0-0",
+            "linux-name": "eth1",
             "description": "HA device interface"
           }
         ],
@@ -2042,6 +2044,7 @@
             "macIndex": 1,
             "speed": 1000,
             "name": "mgmt-0-0",
+            "linux-name": "eth0",
             "description": "Port MGMT labeled on the device"
           },
           {
@@ -2049,6 +2052,7 @@
             "macIndex": 0,
             "speed": 1000,
             "name": "ha-0-0",
+            "linux-name": "eth1",
             "description": "HA device interface"
           }
         ]
