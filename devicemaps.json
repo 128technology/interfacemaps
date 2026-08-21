@@ -1850,14 +1850,14 @@
           },
           {
             "type": "MGMT",
-            "macIndex": 2,
+            "macIndex": 1,
             "speed": 1000,
             "name": "mgmt-0-0",
             "description": "Port MGMT labeled on the device"
           },
           {
             "type": "HASync",
-            "macIndex": 1,
+            "macIndex": 0,
             "speed": 1000,
             "name": "ha-0-0",
             "description": "HA device interface"
@@ -2039,14 +2039,14 @@
           },
           {
             "type": "MGMT",
-            "macIndex": 2,
+            "macIndex": 1,
             "speed": 1000,
             "name": "mgmt-0-0",
             "description": "Port MGMT labeled on the device"
           },
           {
             "type": "HASync",
-            "macIndex": 1,
+            "macIndex": 0,
             "speed": 1000,
             "name": "ha-0-0",
             "description": "HA device interface"
