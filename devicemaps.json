@@ -1490,7 +1490,8 @@
           "recovery-mode",
           "reset-button",
           "no-pci-on-forwarding-interfaces",
-          "interface-name-on-forwarding-interfaces"
+          "interface-name-on-forwarding-interfaces",
+          "no-video-console"
         ],
         "ethernet": [
           {
