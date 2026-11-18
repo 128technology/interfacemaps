@@ -413,6 +413,106 @@
             }
           }
         ]
+      },
+      "NCA-4010D": {
+        "ethernet": [
+          {
+            "pciAddress": "0000:07:00.0",
+            "type": "WAN",
+            "name": "ge-0",
+            "description": "Slot 0 port 0",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "wan1",
+                "description": "WAN 1 network interface, connected to slot 0 port 0 on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:08:00.0",
+            "type": "WAN",
+            "name": "ge-1",
+            "description": "Slot 0 port 1",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "wan2",
+                "description": "WAN 2 network interface, connected to slot 0 port 1 on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:09:00.0",
+            "type": "WAN",
+            "name": "ge-2",
+            "description": "Slot 0 port 2",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "wan3",
+                "description": "WAN 3 network interface, connected to slot 0 port 2 on the device"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:0a:00.0",
+            "type": "LAN",
+            "name": "ge-3",
+            "description": "Slot 0 port 3",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "",
+                "description": ""
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:0b:00.0",
+            "type": "LAN",
+            "name": "ge-4",
+            "description": "Slot 1 port 0",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "",
+                "description": ""
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:0c:00.0",
+            "type": "LAN",
+            "name": "ge-5",
+            "description": "Slot 1 port 1",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "lan",
+                "description": "LAN network interface"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:0d:00.0",
+            "type": "HAFabric",
+            "name": "ge-6",
+            "description": "Slot 1 port 2",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "ha-fabric",
+                "description": "HA fabric network interface"
+              }
+            }
+          },
+          {
+            "pciAddress": "0000:0e:00.0",
+            "type": "HASync",
+            "name": "ge-7",
+            "description": "Slot 1 port 3",
+            "bcpNetwork": {
+              "standaloneBranch": {
+                "name": "ha-sync",
+                "description": "HA sync network interface"
+              }
+            }
+          }
+        ]
       }
     },
     "Juniper": {
