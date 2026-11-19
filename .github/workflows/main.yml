@@ -16,14 +16,27 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Set up Python 3.9
+    - name: Set up Python 3.12
       uses: actions/setup-python@v5
       with:
-        python-version: "3.9"
+        python-version: "3.12"
     - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install jsonschema-cli
+      run: python -m pip install jsonschema==4.26.0
     - name: Validate Schema
       run: |
-        jsonschema-cli validate skumap-schema.json devicemaps.json
+        python - <<'PY'
+        import json
+        from pathlib import Path
+
+        from jsonschema import Draft7Validator
+        from referencing import Registry
+        from referencing.jsonschema import DRAFT7
+
+        device_schema = json.loads(Path("devicemap-schema.json").read_text())
+        registry = Registry().with_resource(
+            "devicemap-schema.json", DRAFT7.create_resource(device_schema)
+        )
+        sku_schema = json.loads(Path("skumap-schema.json").read_text())
+        device_maps = json.loads(Path("devicemaps.json").read_text())
+        Draft7Validator(sku_schema, registry=registry).validate(device_maps)
+        PY
